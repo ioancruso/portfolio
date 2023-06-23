@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Dictionary App",
+      "description": "e un dictionar bro",
+      "photos": {
+        "dark": "/dictionar/dark.png",
+        "light": "/dictionar/light.png"
+      },
+      "about": {
+        "technologies": "React, SASS",
+        "demo": "https://proiect-dictionar.netlify.app/",
+        "repository": "https://github.com/ioancruso/dictionarurban.ro"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Portofolio App",
+      "description": "e un portofoliu bro",
+      "photos": {
+        "dark": "/dictionar/dark.png",
+        "light": "/dictionar/light.png"
+      },
+      "about": {
+        "technologies": "",
+        "demo": "",
+        "repository": ""
+      }
+    }
+  ]
+  

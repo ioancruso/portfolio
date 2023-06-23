@@ -1,0 +1,7 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    background-color: var(--secondary-color);
+    transition: background-color 0.5s ease;
+    border-block-end: 1px solid var(--fourth-color);
+}

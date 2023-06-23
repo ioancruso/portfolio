@@ -1,0 +1,9 @@
+.content {
+    background-color: var(--secondary-color);
+    transition: background-color 0.5s ease;
+    min-height: 83vh;
+    position: relative;
+    @media screen and (min-width: 48em) {
+        grid-template-rows: 1fr;
+    }
+}
