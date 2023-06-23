@@ -27,7 +27,7 @@ function AboutMe() {
                 <div className={styles.description}>
                     {description} 
                 </div>
-                <a href='/cv.pdf' target="_blank" className={styles.cv}> 
+                <a href='/CV.pdf' target="_blank" className={styles.cv}> 
                     <CV/>
                     <span>See my CV here</span>
                 </a>
