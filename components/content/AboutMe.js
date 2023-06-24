@@ -16,13 +16,13 @@ function AboutMe() {
 
     return <>
         <div className={styles.aboutSection}>
-            <div className={styles.photo}>
-                <Image
-                    src="/me.png"
-                    fill 
-                    alt="me"
-                />
-            </div>
+            <Image
+                src="/me.png"
+                width={1000}
+                height={1000}
+                alt="me"
+                className={styles.photo}
+            />
             <div className={styles.about}>
                 <div className={styles.description}>
                     {description} 

@@ -53,8 +53,8 @@ function ProjectCard(props) {
             <div className={styles.presentation}>                
                 <Image
                     src={theme === 'dark' ? photos.dark : photos.light}
-                    width={2443}
-                    height={1374}
+                    width={1943}
+                    height={874}
                     alt="me"
                     className={styles.image}
                 />
