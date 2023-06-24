@@ -19,7 +19,7 @@ function AboutMe() {
             <div className={styles.photo}>
                 <Image
                     src="/me.png"
-                    fill
+                    fill 
                     alt="me"
                 />
             </div>
@@ -37,29 +37,29 @@ function AboutMe() {
                     </div>
                     <div className={styles.list}>
                         <a href={linkedin} target="_blank" className={styles.socialsButton}>
-                            <Linkedin/>
+                            <Linkedin width={55} height={55}/>
                             <div className={styles.socialName}>
                                 Linkedin
                             </div>
+                        </a>
+                        <a href={instagram} target="_blank" className={styles.socialsButton}>
+                            <Instagram width={55} height={55}/>
+                            <div className={styles.socialName}>
+                                Instagram
+                            </div>
                         </a>      
                         <a href={github} target="_blank" className={styles.socialsButton}>             
-                            <GitHub/>
+                            <GitHub width={55} height={55}/>
                             <div className={styles.socialName}>
                                 Github
                             </div>
                         </a>
                         <a href={`mailto:${email}`} target="_blank" className={styles.socialsButton}>
-                            <Email/>
+                            <Email width={58} height={58}/>
                             <div className={styles.socialName}>
                                 Email
                             </div>
-                        </a>     
-                        <a href={instagram} target="_blank" className={styles.socialsButton}>
-                            <Instagram/>
-                            <div className={styles.socialName}>
-                                Instagram
-                            </div>
-                        </a>
+                        </a>      
                     </div>                   
                 </div>
             </div>
