@@ -15,8 +15,50 @@
     },
     {
       "id": 2,
-      "name": "Portofolio App",
-      "description": "e un portofoliu bro",
+      "name": "Exemplu 2",
+      "description": "e un exemplu bro",
+      "photos": {
+        "dark": "/dictionar/dark.png",
+        "light": "/dictionar/light.png"
+      },
+      "about": {
+        "technologies": "",
+        "demo": "",
+        "repository": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "Exemplu 3",
+      "description": "e un exemplu bro",
+      "photos": {
+        "dark": "/dictionar/dark.png",
+        "light": "/dictionar/light.png"
+      },
+      "about": {
+        "technologies": "",
+        "demo": "",
+        "repository": ""
+      }
+    },
+    {
+      "id": 4,
+      "name": "Exemplu 4",
+      "description": "e un exemplu bro",
+      "photos": {
+        "dark": "/dictionar/dark.png",
+        "light": "/dictionar/light.png"
+      },
+      "about": {
+        "technologies": "",
+        "demo": "",
+        "repository": ""
+      }
+    },
+    {
+      "id": 5,
+      "name": "Exemplu 5",
+      "description": "e un exemplu bro",
       "photos": {
         "dark": "/dictionar/dark.png",
         "light": "/dictionar/light.png"
