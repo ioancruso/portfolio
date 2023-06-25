@@ -25,9 +25,9 @@ function AboutMe() {
     return <>
         <div className={styles.aboutSection}>
             <Image
-                src="/me.png"
-                width={1000}
-                height={1000} 
+                src="/me2.png"
+                width={1280}
+                height={1125}
                 alt="me"
                 className={`${styles.photo} ${imageLoaded ? '' : styles.placeholder}`}
                 onLoad={handleImageLoad}

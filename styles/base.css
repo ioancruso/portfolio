@@ -11,6 +11,7 @@
     --button-color-hover: #567fe8;
 
     --grey-scale: 10%;
+    --placeholder: grey;
 }
 [data-theme="light"] {
     --primary-color: #FFFFFF;
@@ -25,6 +26,7 @@
     --button-color-hover: #96aeec;
 
     --grey-scale: 0;
+    --placeholder: grey;
 }
 html {
     overflow: scroll;

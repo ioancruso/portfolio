@@ -75,7 +75,7 @@
     }
 }
 .placeholder {
-    background-color: grey;
+    background-color: var(--placeholder);
 }
 .about {
     grid-row: 3/4;
