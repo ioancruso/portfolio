@@ -65,7 +65,7 @@
 .image {
     grid-row: 1/2;
     grid-column: 1/2;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     width: 90%;
     height: auto;
     margin-inline: auto;
@@ -73,6 +73,9 @@
         width: 80%;
         margin-inline: auto;
     }
+}
+.placeholder {
+    background-color: grey;
 }
 .about {
     grid-row: 3/4;

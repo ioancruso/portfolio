@@ -37,6 +37,7 @@
     margin-inline: auto;
     grid-row: 1/2;
     grid-column: 1/2;
+    border-radius: 100rem;
     filter: grayscale(var(--grey-scale));
     @media screen and (min-width: 1136px) {
         width: 85%;
@@ -44,7 +45,9 @@
         grid-column: 2/3;
     }
 }
-
+.placeholder {
+    background-color: grey;
+}
 .about {
     display: grid;
     grid-row: 2/3;

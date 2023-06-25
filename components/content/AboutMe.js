@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { useState } from 'react';
+
 import GitHub from '../../svgs/github'
 import Linkedin from '../../svgs/linkedin'
 import Instagram from '../../svgs/instagram';
@@ -11,17 +13,24 @@ import data from '../../data/about.json'
 import styles from "../../styles/content/components/aboutme.module.scss";
 
 function AboutMe() {
+
+    const [imageLoaded, setImageLoaded] = useState(false);
     
     const { description, email, github, instagram, linkedin } = data;
+
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    };
 
     return <>
         <div className={styles.aboutSection}>
             <Image
                 src="/me.png"
                 width={1000}
-                height={1000}
+                height={1000} 
                 alt="me"
-                className={styles.photo}
+                className={`${styles.photo} ${imageLoaded ? '' : styles.placeholder}`}
+                onLoad={handleImageLoad}
             />
             <div className={styles.about}>
                 <div className={styles.description}>

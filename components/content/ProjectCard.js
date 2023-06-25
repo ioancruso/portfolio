@@ -9,6 +9,8 @@ import Github from '../../svgs/github2';
 
 function ProjectCard(props) {
 
+    const [imageLoaded, setImageLoaded] = useState(false);
+
     const project = props.project;
     const { name, description, photos, about } = project;
 
@@ -47,16 +49,21 @@ function ProjectCard(props) {
         return () => matcher.removeEventListener('change', updateMatch);
     }, []);
 
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    };
+
     return <>
         <div className={styles.projectCard}>          
             <div className={styles.title}>{name}</div>
             <div className={styles.presentation}>                
                 <Image
                     src={theme === 'dark' ? photos.dark : photos.light}
-                    width={1943}
-                    height={874}
+                    width={2443}
+                    height={1374}
                     alt="me"
-                    className={styles.image}
+                    className={`${styles.image} ${imageLoaded ? '' : styles.placeholder}`}
+                    onLoad={handleImageLoad}
                 />
                 <div className={styles.details}>
                     <div className={styles.category}>
