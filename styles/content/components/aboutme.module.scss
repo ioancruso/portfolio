@@ -21,8 +21,8 @@
 
 .aboutSection {
     display: grid;
-    margin-inline: 1rem;
-    margin-block: 1rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
     row-gap: 1.7rem;
     text-align: center;
     @media screen and (min-width: 800px) {

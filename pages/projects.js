@@ -8,9 +8,9 @@ function Projects() {
 
     return <>
         <div className={styles.projectsSection}>
-            {data.map((project) => (
+        {data.map((project) => (
                 <ProjectCard key={project.id} project={project}/>
-            ))}
+        ))}
         </div>
     </>
 }
