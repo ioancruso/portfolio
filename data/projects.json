@@ -9,8 +9,8 @@
       },
       "about": {
         "technologies": "React, HTML, Javascript, CSS, SASS",
-        "demo": "https://proiect-dictionar.netlify.app/",
-        "repository": "https://github.com/ioancruso/dictionarurban.ro"
+        "demo": "https://dictionar.vercel.app/",
+        "repository": "https://github.com/ioancruso/dictionary"
       }
     },
     {
