@@ -55,16 +55,16 @@ function ProjectCard(props) {
                 />
                 <div className={styles.details}>
                     <div className={styles.category}>
-                        <Technologies/>
-                        <div>Used: <span>{about.technologies}</span></div>
+                        <Technologies width={50} height={50}/>
+                        <div><span>{about.technologies}</span></div>
                     </div>
                     <a href={about.demo} target="_blank" className={`${styles.category} ${styles.link}`}>
-                        <Demo/>
+                        <Demo width={50} height={50}/>
                         <div>Live Demo</div>
                     </a>
                     <a href={about.repository} target="_blank" className={`${styles.category} ${styles.link}`}>
-                        <Github width={35} height={35}/>
-                        <div>Project Repository</div>
+                        <Github width={50} height={50}/>
+                        <div>Repository</div>
                     </a>
                 </div>
             </div>

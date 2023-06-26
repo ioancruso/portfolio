@@ -31,7 +31,9 @@
     font-weight: bold;
     font-size: 1.8rem;
     text-align: center;
-    margin-block: 2rem;
+    margin-block-start: 2rem;
+    padding-block-end: 1.5rem;
+    border-block-end: 1px solid var(--fourth-color);
 }
 .presentation {
     display: grid;   
@@ -40,6 +42,8 @@
     margin-inline: auto;
     row-gap: 1.5rem;
     white-space: nowrap;
+    padding-block: 1.5rem;
+    border-block-end: 1px solid var(--fourth-color);
     @media screen and (min-width: 1136px) {
         grid-template-columns: 1fr 0.4fr;
         row-gap: 0;
@@ -91,21 +95,29 @@
 .category {
     all: unset;
     display: flex;
+    flex-direction: column;
     margin-block-start: 0.6rem;
     font-size: 1.2rem;
     margin-inline-end: 1rem;
-    div {
-        margin-block: auto;
-        margin-inline-start: 0.3rem;
-        font-weight: bold;
+    svg {
+        margin-inline: auto;
     }
-    span {
-        color: var(--clickable-color);
+    div {
+        margin-block-start: 0.3rem;
+        font-weight: bold;
+        text-align: center;
     }
     @media screen and (min-width: 1136px) {
         font-size: 1.5rem;
         display: flex;
         flex-direction: row;
+        svg {
+            margin-inline: 0;
+        }
+        div {
+            margin-block: auto;
+            margin-inline-start: 0.3rem;
+        }
     }   
 }
 .link {
