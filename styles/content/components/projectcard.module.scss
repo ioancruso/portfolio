@@ -1,19 +1,11 @@
 //Svgs
 
 .svgColorFill {
-    fill: var(--text-color);
+    fill: var(--button-color);
     transition: stroke 0.3s;
 }
 .svgColorStroke {
     stroke: var(--text-color);
-    transition: stroke 0.3s;
-}
-.svgColorFillInverted {
-    fill: var(--primary-color);
-    transition: stroke 0.3s;
-}
-.svgColorStrokeInverted {
-    stroke: var(--primary-color);
     transition: stroke 0.3s;
 }
 
@@ -122,6 +114,7 @@
 }
 .link {
     cursor: pointer;
+    color: var(--button-color);
     &:hover {
         .socialName {
             color: var(--button-color-hover);
