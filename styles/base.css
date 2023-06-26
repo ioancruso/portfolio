@@ -1,14 +1,14 @@
 :root {
     --primary-color: #0B0C0F;
     --secondary-color: #2B303B;
-    --third-color: #656464;
+    --third-color: #3b4251ce;
     --fourth-color: #4c4e54;
 
     --text-color: #ffffff;
-    --clickable-color: #f3c3c3;
+    --clickable-color: #4692d3;
 
-    --button-color: #2d2476;
-    --button-color-hover: #567fe8;
+    --button-color: #567fe8;
+    --button-color-hover: #b3345c;
 
     --grey-scale: 10%;
     --placeholder: grey;
@@ -19,11 +19,11 @@
     --third-color: #D3D3D3;
     --fourth-color: #b7bac0;
 
-    --text-color: #363C49;
+    --text-color: #000;
     --clickable-color: #2D6A9F;
 
-    --button-color: #f1faee;
-    --button-color-hover: #96aeec;
+    --button-color: #567cdb;
+    --button-color-hover: #b3345c;
 
     --grey-scale: 0;
     --placeholder: grey;
@@ -50,4 +50,5 @@ body {
 #__next {
     display: grid;
     min-height: 100vh;
+    background-color: var(--secondary-color);
 }

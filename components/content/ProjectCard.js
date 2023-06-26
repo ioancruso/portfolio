@@ -15,7 +15,6 @@ function ProjectCard(props) {
     const { name, description, photos, about } = project;
 
     const [theme, setTheme] = useState("dark");
-    const [isDesktop, setIsDesktop] = useState(false);
 
     useEffect(() => {
         const htmlElement = document.documentElement;
@@ -38,17 +37,6 @@ function ProjectCard(props) {
     
     }, []);
 
-    useEffect(() => {
-        const matcher = window.matchMedia(`(min-width: 71em)`);
-    
-        const updateMatch = (e) => setIsDesktop(e.matches);
-        updateMatch(matcher);
-    
-        matcher.addEventListener('change', updateMatch);
-    
-        return () => matcher.removeEventListener('change', updateMatch);
-    }, []);
-
     const handleImageLoad = () => {
         setImageLoaded(true);
     };
@@ -59,8 +47,8 @@ function ProjectCard(props) {
             <div className={styles.presentation}>                
                 <Image
                     src={theme === 'dark' ? photos.dark : photos.light}
-                    width={2443}
-                    height={1374}
+                    width={2451}
+                    height={1360}
                     alt="me"
                     className={`${styles.image} ${imageLoaded ? '' : styles.placeholder}`}
                     onLoad={handleImageLoad}
@@ -68,15 +56,15 @@ function ProjectCard(props) {
                 <div className={styles.details}>
                     <div className={styles.category}>
                         <Technologies/>
-                        <span>Used: {about.technologies}</span>
+                        <div>Used: <span>{about.technologies}</span></div>
                     </div>
-                    <a href={about.demo} className={`${styles.category} ${styles.link}`}>
+                    <a href={about.demo} target="_blank" className={`${styles.category} ${styles.link}`}>
                         <Demo/>
-                        <span>Live Demo</span>
+                        <div>Live Demo</div>
                     </a>
-                    <a href={about.repository} className={`${styles.category} ${styles.link}`}>
+                    <a href={about.repository} target="_blank" className={`${styles.category} ${styles.link}`}>
                         <Github width={35} height={35}/>
-                        <span>Project Repository</span>
+                        <div>Project Repository</div>
                     </a>
                 </div>
             </div>

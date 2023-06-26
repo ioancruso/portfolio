@@ -51,6 +51,12 @@ function AboutMe() {
                                 Linkedin
                             </div>
                         </a>
+                        <a href={`mailto:${email}`} target="_blank" className={styles.socialsButton}>
+                            <Email width={58} height={58}/>
+                            <div className={styles.socialName}>
+                                Email
+                            </div>
+                        </a>  
                         <a href={instagram} target="_blank" className={styles.socialsButton}>
                             <Instagram width={55} height={55}/>
                             <div className={styles.socialName}>
@@ -62,13 +68,7 @@ function AboutMe() {
                             <div className={styles.socialName}>
                                 Github
                             </div>
-                        </a>
-                        <a href={`mailto:${email}`} target="_blank" className={styles.socialsButton}>
-                            <Email width={58} height={58}/>
-                            <div className={styles.socialName}>
-                                Email
-                            </div>
-                        </a>      
+                        </a>    
                     </div>                   
                 </div>
             </div>

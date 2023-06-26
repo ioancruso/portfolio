@@ -1,71 +1,29 @@
 [
     {
       "id": 1,
-      "name": "Dictionary App",
+      "name": "Full Stack NextJs Application - Dictionary",
       "description": "e un dictionar bro",
       "photos": {
-        "dark": "/dictionar/dark.png",
-        "light": "/dictionar/light.png"
+        "dark": "/demos/dictionary/darkmode.png",
+        "light": "/demos/dictionary/lightmode.png"
       },
       "about": {
-        "technologies": "React, SASS",
+        "technologies": "React, HTML, Javascript, CSS, SASS",
         "demo": "https://proiect-dictionar.netlify.app/",
         "repository": "https://github.com/ioancruso/dictionarurban.ro"
       }
     },
     {
       "id": 2,
-      "name": "Exemplu 2",
+      "name": "Next Js Application - Portofolio",
       "description": "e un exemplu bro",
       "photos": {
-        "dark": "/dictionar/dark.png",
-        "light": "/dictionar/light.png"
+        "dark": "/demos/portofolio/darkmode.png",
+        "light": "/demos/portofolio/lightmode.png"
       },
       "about": {
-        "technologies": "",
-        "demo": "",
-        "repository": ""
-      }
-    },
-    {
-      "id": 3,
-      "name": "Exemplu 3",
-      "description": "e un exemplu bro",
-      "photos": {
-        "dark": "/dictionar/dark.png",
-        "light": "/dictionar/light.png"
-      },
-      "about": {
-        "technologies": "",
-        "demo": "",
-        "repository": ""
-      }
-    },
-    {
-      "id": 4,
-      "name": "Exemplu 4",
-      "description": "e un exemplu bro",
-      "photos": {
-        "dark": "/dictionar/dark.png",
-        "light": "/dictionar/light.png"
-      },
-      "about": {
-        "technologies": "",
-        "demo": "",
-        "repository": ""
-      }
-    },
-    {
-      "id": 5,
-      "name": "Exemplu 5",
-      "description": "e un exemplu bro",
-      "photos": {
-        "dark": "/dictionar/dark.png",
-        "light": "/dictionar/light.png"
-      },
-      "about": {
-        "technologies": "",
-        "demo": "",
+        "technologies": "React, HTML, Javascript, CSS, SASS",
+        "demo": "https://icruso.ro/",
         "repository": ""
       }
     }

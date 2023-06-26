@@ -6,7 +6,7 @@ function HomePage() {
 
     return <>
         <Head>
-            <title>Hi!</title>
+            <title>Hi! I'm Ioan.</title>
         </Head>
         <AboutMe/>
     </>
