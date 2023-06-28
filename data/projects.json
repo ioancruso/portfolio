@@ -9,7 +9,7 @@
       },
       "about": {
         "technologies": "React, HTML, Javascript, CSS, SASS",
-        "demo": "https://dictionar.vercel.app/",
+        "demo": "https://dictionary.icruso.ro/",
         "repository": "https://github.com/ioancruso/dictionary"
       }
     },
