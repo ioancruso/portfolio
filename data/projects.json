@@ -2,13 +2,13 @@
     {
       "id": 1,
       "name": "Full Stack NextJs Application - Dictionary",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "This project is a sophisticated, full-stack web application developed using the powerful Next.js framework. It serves as a dictionary, presenting expressions used daily in informal discussions, along with their meanings. The front end, crafted with React.js, ensures a highly interactive and responsive user interface, while the layout and aesthetics are handled by SCSS for a modern look and feel. A user-friendly 'Dark Mode' toggle is also integrated, catering to preferences for a more eye-comfortable viewing experience. The back end and authentication aspects leverage Supabase, an open-source Firebase alternative, for streamlined user authentication and efficient database operations. Notable features include the ability for registered users to add expressions and a like/dislike system for engagement. To experience the application's functionality and user interface firsthand, please click the 'Live Demo' button, and for those interested in the source code, it can be found on GitHub via the 'Repository' button.",
       "photos": {
         "dark": "/demos/dictionary/darkmode3.png",
         "light": "/demos/dictionary/lightmode3.png"
       },
       "about": {
-        "technologies": "React, HTML, Javascript, CSS, SASS",
+        "technologies": "React, SASS, Supabase + (HTML, Javascript, CSS)",
         "demo": "https://dictionary.icruso.ro/",
         "repository": "https://github.com/ioancruso/dictionary"
       }
@@ -16,13 +16,13 @@
     {
       "id": 2,
       "name": "Next Js Application - Portofolio",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "A front-end application developed using React.js and SCSS. It offers an extensive overview of the developer's skills and project history. The 'About' page includes a photograph, a brief introduction, a downloadable CV, and links to various social media platforms, presenting a rounded view of the developer's professional identity. A nice feature is the 'Dark Mode' toggle, catering to user preference for a more eye-friendly viewing experience. The 'Projects' page showcases an array of projects, each annotated with the technologies used, a concise description, and links to both live demos and GitHub repositories. To experience the application's functionality and user interface firsthand, please click the 'Live Demo' button, and for those interested in the source code, it can be found on GitHub via the 'Repository' button.",
       "photos": {
         "dark": "/demos/portofolio/darkmode.png",
         "light": "/demos/portofolio/lightmode.png"
       },
       "about": {
-        "technologies": "React, HTML, Javascript, CSS, SASS",
+        "technologies": "React, SASS + (HTML, Javascript, CSS)",
         "demo": "https://icruso.ro/",
         "repository": "https://github.com/ioancruso/portofolio"
       }
