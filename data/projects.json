@@ -8,7 +8,7 @@
         "light": "/demos/dictionary/lightmode3.png"
       },
       "about": {
-        "technologies": "React, SASS, Supabase + (HTML, Javascript, CSS)",
+        "technologies": "React, SASS, Supabase",
         "demo": "https://dictionary.icruso.ro/",
         "repository": "https://github.com/ioancruso/dictionary"
       }
@@ -22,7 +22,7 @@
         "light": "/demos/portofolio/lightmode.png"
       },
       "about": {
-        "technologies": "React, SASS + (HTML, Javascript, CSS)",
+        "technologies": "React, SASS",
         "demo": "https://icruso.ro/",
         "repository": "https://github.com/ioancruso/portofolio"
       }
