@@ -41,14 +41,14 @@ html, body{
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
-    -webkit-transition: background-color 300ms linear, color 1s linear;
-    -moz-transition: background-color 300ms linear, color 1s linear;
-    -o-transition: background-color 300ms linear, color 1s linear;
-    -ms-transition: background-color 300ms linear, color 1s linear;
-    transition: background-color 300ms linear, color 1s linear;
+    -webkit-transition: background-color 300ms linear, color 0.5s linear;
+    -moz-transition: background-color 300ms linear, color 0.5s linear;
+    -o-transition: background-color 300ms linear, color 0.5s linear;
+    -ms-transition: background-color 300ms linear, color 0.5s linear;
+    transition: background-color 300ms linear, color 0.5s linear;
 }
 #__next {
     display: grid;
-    min-height: 100vh;
+    grid-template-rows: 8vh min-content 5vh;
     background-color: var(--secondary-color);
 }

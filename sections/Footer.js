@@ -8,7 +8,7 @@ function Footer() {
 
     return <>
         <div className={styles.footer}>
-            <div>2023 * {name} - {footer}</div>
+            <div>{name} © {footer}</div>
         </div>
     </>
 }

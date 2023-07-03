@@ -60,7 +60,7 @@ function ProjectCard(props) {
                     </div>
                     <a href={about.demo} target="_blank" className={`${styles.category} ${styles.link}`}>
                         <Demo width={50} height={50}/>
-                        <div>Live Demo</div>
+                        <div>Demo</div>
                     </a>
                     <a href={about.repository} target="_blank" className={`${styles.category} ${styles.link}`}>
                         <Github width={50} height={50}/>
@@ -69,7 +69,9 @@ function ProjectCard(props) {
                 </div>
             </div>
             <div className={styles.about}>
-                {description}
+                {description.split("/").map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
             </div>
         </div>
     </>

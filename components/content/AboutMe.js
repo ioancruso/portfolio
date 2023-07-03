@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 import GitHub from '../../svgs/github'
 import Linkedin from '../../svgs/linkedin'
-import Instagram from '../../svgs/instagram';
 import CV from '../../svgs/cv';
 import Email from '../../svgs/email';
 
@@ -16,7 +15,7 @@ function AboutMe() {
 
     const [imageLoaded, setImageLoaded] = useState(false);
     
-    const { description, email, github, instagram, linkedin } = data;
+    const { description, email, github, linkedin } = data;
 
     const handleImageLoad = () => {
         setImageLoaded(true);
@@ -36,15 +35,13 @@ function AboutMe() {
                 <div className={styles.description}>
                     {description} 
                 </div>
-                <a href='/CV.pdf' target="_blank" className={styles.cv}> 
-                    <CV/>
-                    <span>See my CV here</span>
-                </a>
                 <div className={styles.socials}>
-                    <div className={styles.title}>
-                        You can find me on:
-                    </div>
+
                     <div className={styles.list}>
+                        <a href='/CV.pdf' target="_blank" className={styles.cv}> 
+                            <CV/>
+                            <span>CV</span>
+                        </a>
                         <a href={linkedin} target="_blank" className={styles.socialsButton}>
                             <Linkedin width={55} height={55}/>
                             <div className={styles.socialName}>
@@ -57,12 +54,6 @@ function AboutMe() {
                                 Email
                             </div>
                         </a>  
-                        <a href={instagram} target="_blank" className={styles.socialsButton}>
-                            <Instagram width={55} height={55}/>
-                            <div className={styles.socialName}>
-                                Instagram
-                            </div>
-                        </a>      
                         <a href={github} target="_blank" className={styles.socialsButton}>             
                             <GitHub width={55} height={55}/>
                             <div className={styles.socialName}>

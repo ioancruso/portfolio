@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Full Stack NextJs Application - Dictionary",
-      "description": "A full-stack web application developed using the powerful Next.js framework. It serves as a dictionary, presenting expressions used daily in informal discussions, along with their meanings. The frontend, crafted with React.js, ensures a highly interactive and responsive user interface, while the layout and aesthetics are handled by SCSS for a modern look and feel. A user-friendly 'Dark Mode' toggle is also integrated, catering to preferences for a more eye-comfortable viewing experience. The back end and authentication aspects leverage Supabase, an open-source Firebase alternative, for streamlined user authentication and efficient database operations. Notable features include the ability for registered users to add expressions and a like/dislike system for engagement. To experience the application's functionality and user interface firsthand, please click the 'Live Demo' button, and for those interested in the source code, it can be found on GitHub via the 'Repository' button.",
+      "description": "Developed using Next.js and React.js, acting as an interactive dictionary for informal expressions./ Employed SCSS for a modern UI design with a Dark Mode feature, enhancing user experience./Utilized Supabase for efficient backend operations including user authentication and database management./ Enabled registered users to contribute by adding expressions and interacting via a like-dislike system.",
       "photos": {
         "dark": "/demos/dictionary/darkmode3.png",
         "light": "/demos/dictionary/lightmode3.png"
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "name": "Next Js Application - Portofolio",
-      "description": "A frontend application developed using React.js and SCSS. It offers an extensive overview of the developer's skills and project history. The 'About' page includes a photograph, a brief introduction, a downloadable CV, and links to various social media platforms, presenting a rounded view of the developer's professional identity. A nice feature is the 'Dark Mode' toggle, catering to user preference for a more eye-friendly viewing experience. The 'Projects' page showcases an array of projects, each annotated with the technologies used, a concise description, and links to both live demos and GitHub repositories. To experience the application's functionality and user interface firsthand, please click the 'Live Demo' button, and for those interested in the source code, it can be found on GitHub via the 'Repository' button.",
+      "description": "Developed using React.js and SCSS to showcase the developer’s profile and portfolio./Included an ’About’ page with a photograph, introduction, downloadable CV, and social media links for a comprehensive professional profile./Integrated a user-friendly ’Dark Mode’ toggle for a more comfortable viewing experience/Featured a ’Portfolio’ page displaying an array of projects, each with its utilized technologies, description, and links to livedemos and GitHub repositories.",
       "photos": {
         "dark": "/demos/portofolio/darkmode.png",
         "light": "/demos/portofolio/lightmode.png"

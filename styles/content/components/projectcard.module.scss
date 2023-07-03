@@ -61,13 +61,16 @@
     grid-column: 1/2;
     margin-block: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2rem;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     margin-inline: auto;
     @media screen and (min-width: 1136px) {
         grid-row: 1/2;
         grid-column: 2/3;
+        flex-direction: column;
+        gap: 1rem;
         margin-inline: unset;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -76,12 +79,11 @@
 .about {
     grid-row: 3/4;
     font-size: 1.3rem;
-    margin-block-start: 1.5em;
-    margin-inline: 1.5rem;
-    margin-block-end: 1.5rem;
-    text-align: center;
+    padding-block: 1.5em;
+    padding-inline: 1.5rem;
+    text-align: left;
     @media screen and (min-width: 1136px) {
-        margin-inline: 5rem;
+        margin-inline: 5.5rem;
     }
 }
 .category {
