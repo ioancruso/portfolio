@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Full Stack NextJs Application - Dictionary",
-      "description": "Developed using Next.js and React.js, acting as an interactive dictionary for informal expressions./ Employed SCSS for a modern UI design with a Dark Mode feature, enhancing user experience./Utilized Supabase for efficient backend operations including user authentication and database management./ Enabled registered users to contribute by adding expressions and interacting via a like-dislike system.",
+      "description": "Developed using Next.js and React.js, acting as an interactive dictionary for informal expressions./Employed SCSS for a modern UI design with a Dark Mode feature, enhancing user experience./Utilized Supabase for efficient backend operations including user authentication and database management./Enabled registered users to contribute by adding expressions and interacting via a like-dislike system.",
       "photos": {
         "dark": "/demos/dictionary/darkmode3.png",
         "light": "/demos/dictionary/lightmode3.png"
