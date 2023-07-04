@@ -38,9 +38,11 @@ function AboutMe() {
                 <div className={styles.socials}>
 
                     <div className={styles.list}>
-                        <a href='/CV.pdf' target="_blank" className={styles.cv}> 
+                        <a href='/CV.pdf' target="_blank" className={styles.socialsButton}> 
                             <CV/>
-                            <span>CV</span>
+                            <div className={styles.socialName}>
+                                CV
+                            </div>
                         </a>
                         <a href={linkedin} target="_blank" className={styles.socialsButton}>
                             <Linkedin width={55} height={55}/>

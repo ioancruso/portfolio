@@ -63,7 +63,7 @@
     grid-template-columns: 1fr 1fr;
     margin-block-start: 2rem;
     row-gap: 1rem;
-    
+    margin-inline: auto;
     @media screen and (min-width: 1136px) {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -73,7 +73,7 @@
     all: unset;
     display: flex;
     flex-direction: row;
-    margin-inline: auto;
+    justify-content: center;
     cursor: pointer;
     @media screen and (min-width: 1136px) {
         margin-inline: auto;
@@ -96,32 +96,6 @@
         }
     }
 }
-.cv {
-    all: unset;
-    display: flex;
-    flex-direction: row;
-    font-size: 1.8rem;
-    margin-block: auto;
-    font-weight: bold;
-    margin-inline: auto;
-    text-align: center;
-    cursor: pointer;
-    span {
-        margin-block: auto;
-        color: var(--button-color);
-        &:hover {
-            color: var(--button-color-hover);
-        }
-    }
-    &:hover {
-        span {
-            color: var(--button-color-hover);
-        }
-        .svgColorStroke {
-            stroke: var(--button-color-hover);
-        }
-    }
-}
 .socials {
     margin-block: auto;
     border-block-start: 1px solid var(--fourth-color);
@@ -132,7 +106,7 @@
 .socialName {
     color: var(--button-color);
     margin-block: auto;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-inline-start: 0.2rem;
 }
