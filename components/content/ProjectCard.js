@@ -54,18 +54,20 @@ function ProjectCard(props) {
                     onLoad={handleImageLoad}
                 />
                 <div className={styles.details}>
-                    <div className={styles.category}>
-                        <Technologies width={50} height={50}/>
-                        <div><span>{about.technologies}</span></div>
+                    <a className={styles.category}>
+                        <Technologies width={46} height={46}/>
+                        <div>{about.technologies}</div>
+                    </a>
+                    <div>
+                        <a href={about.demo} target="_blank" className={`${styles.category} ${styles.link}`}>
+                            <Demo width={50} height={50}/>
+                            <div>Demo</div>
+                        </a>
+                        <a href={about.repository} target="_blank" className={`${styles.category} ${styles.link}`}>
+                            <Github width={50} height={50}/>
+                            <div>Repository</div>
+                        </a>
                     </div>
-                    <a href={about.demo} target="_blank" className={`${styles.category} ${styles.link}`}>
-                        <Demo width={50} height={50}/>
-                        <div>Demo</div>
-                    </a>
-                    <a href={about.repository} target="_blank" className={`${styles.category} ${styles.link}`}>
-                        <Github width={50} height={50}/>
-                        <div>Repository</div>
-                    </a>
                 </div>
             </div>
             <div className={styles.about}>

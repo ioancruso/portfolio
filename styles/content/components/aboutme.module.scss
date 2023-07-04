@@ -2,11 +2,11 @@
 
 .svgColorFill {
     fill: var(--button-color);
-    transition: stroke 0.3s;
+    transition: stroke;
 }
 .svgColorStroke {
     stroke: var(--button-color);
-    transition: stroke 0.3s;
+    transition: stroke;
 }
 
 // Page
