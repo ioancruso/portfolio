@@ -32,23 +32,23 @@ html {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-html, body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-family: system-ui, sans-serif;
-    line-height: 1.7em;
+html {
+    height: 100%;
 }
 body {
+    all: unset;
+    height: 100%;
+    background-color: var(--primary-color);
     color: var(--text-color);
-    -webkit-transition: background-color 300ms linear, color 0.5s linear;
-    -moz-transition: background-color 300ms linear, color 0.5s linear;
-    -o-transition: background-color 300ms linear, color 0.5s linear;
-    -ms-transition: background-color 300ms linear, color 0.5s linear;
-    transition: background-color 300ms linear, color 0.5s linear;
+
+    font-family: system-ui, sans-serif;
+    -webkit-transition: background-color 300ms linear, color 1s linear;
+    -moz-transition: background-color 300ms linear, color 1s linear;
+    -o-transition: background-color 300ms linear, color 1s linear;
+    -ms-transition: background-color 300ms linear, color 1s linear;
+    transition: background-color 300ms linear, color 1s linear;
 }
 #__next {
     display: grid;
-    grid-template-rows: 8vh min-content 5vh;
     background-color: var(--secondary-color);
 }
