@@ -15,7 +15,7 @@ const Technologies = (props) => (
             strokeLinejoin="round"
             strokeMiterlimit={10}
             strokeWidth={1.5}
-            className={styles.svgColorStroke}
+            className={styles.svgColorStroke2}
         >
             <path
                 d="m8 10-2 2 2 2M16 10l2 2-2 2"

@@ -5,6 +5,11 @@
     transition: stroke 0.3s;
 }
 .svgColorStroke {
+    stroke: var(--button-color);
+    transition: stroke 0.3s;
+}
+
+.svgColorStroke2 {
     stroke: var(--text-color);
     transition: stroke 0.3s;
 }
@@ -12,7 +17,7 @@
 .projectCard {
     display: grid;
     border-radius: 0.5rem;
-    background-color: var(--third-color);
+    background-color: var(--secondary-color);
     margin-inline: 0.5rem;
     @media screen and (min-width: 1136px) {
         margin-inline: 2rem;
@@ -48,6 +53,7 @@
     width: 90%;
     height: auto;
     margin-inline: auto;
+    border: 1px solid var(--fourth-color);
     @media screen and (min-width: 1136px) {
         width: 80%;
         margin-inline: auto;

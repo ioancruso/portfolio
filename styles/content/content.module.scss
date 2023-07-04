@@ -1,7 +1,7 @@
 .content {
     display: grid;
     place-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transition: background-color 0.5s ease;
     min-height: 87vh;
     @media screen and (min-width: 800px) {
