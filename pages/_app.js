@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { Header } from "../sections/Header";
 import { Footer } from "../sections/Footer";
 
-import "../styles/base.css";
+import "../styles/base.scss";
 import styles from "../styles/content/content.module.scss"
 
 export default function MyApp({ Component, pageProps }) {
