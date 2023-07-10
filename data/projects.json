@@ -15,16 +15,16 @@
     },
     {
       "id": 2,
-      "name": "Next Js Application - Portfolio",
-      "description": "Developed using React.js and SCSS to showcase the developer’s profile and portfolio./Included an ’About’ page with a photograph, introduction, downloadable CV, and social media links for a comprehensive professional profile./Integrated a user-friendly ’Dark Mode’ toggle for a more comfortable viewing experience/Featured a ’Portfolio’ page displaying an array of projects, each with its utilized technologies, description, and links to livedemos and GitHub repositories.",
+      "name": "Full Stack NextJs Application - To do",
+      "description": "Developed using Next.js and React.js, acting as a todo list for users./Employed SCSS for a modern UI design./Integrated a user-friendly ’Dark Mode’ toggle for a more comfortable viewing experience./Utilized Supabase for efficient backend operations including user authentication and database management.",
       "photos": {
-        "dark": "/demos/portofolio/darkmode.png",
-        "light": "/demos/portofolio/lightmode.png"
+        "dark": "/demos/todo/darkmode.png",
+        "light": "/demos/todo/lightmode.png"
       },
       "about": {
-        "technologies": "React, SASS",
-        "demo": "https://icruso.ro/",
-        "repository": "https://github.com/ioancruso/portofolio"
+        "technologies": "React, SASS, Supabase",
+        "demo": "https://todo.icruso.ro/",
+        "repository": "https://github.com/ioancruso/todo"
       }
     }
   ]
