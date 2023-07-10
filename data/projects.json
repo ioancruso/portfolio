@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "name": "Full Stack NextJs Application - To do",
+      "name": "Full Stack NextJs Application - To-do List",
       "description": "Developed using Next.js and React.js, acting as a todo list for users./Employed SCSS for a modern UI design./Integrated a user-friendly ’Dark Mode’ toggle for a more comfortable viewing experience./Utilized Supabase for efficient backend operations including user authentication and database management.",
       "photos": {
         "dark": "/demos/todo/darkmode.png",
