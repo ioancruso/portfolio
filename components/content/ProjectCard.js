@@ -11,8 +11,6 @@ import Github from '../../svgs/github2';
 
 function ProjectCard(props) {
 
-    const [imageLoaded, setImageLoaded] = useState(false);
-
     const project = props.project;
     const { name, description, photos, about } = project;
 
@@ -39,24 +37,21 @@ function ProjectCard(props) {
     
     }, []);
 
-    const handleImageLoad = () => {
-        setImageLoaded(true);
-    };
-
     return <>
         <div className={styles.projectCard}>          
             <div className={styles.title}>{name}</div>
             <div className={styles.presentation}>               
-                <NoSSRWrapper>
-                    <Image
-                        src={theme === 'dark' ? photos.dark : photos.light}
-                        width={2451}
-                        height={1360}
-                        alt="me"
-                        className={`${styles.image} ${imageLoaded ? '' : styles.placeholder}`}
-                        onLoad={handleImageLoad}
-                    />
-                </NoSSRWrapper> 
+                    <div className={styles.placeholder}>
+                        <NoSSRWrapper>
+                            <Image
+                                src={theme === 'dark' ? photos.dark : photos.light}
+                                width={2451}
+                                height={1360}
+                                alt="me"
+                                className={styles.image}
+                            />
+                        </NoSSRWrapper>
+                    </div>
                 <div className={styles.details}>
                     <a className={styles.category}>
                         <Technologies width={46} height={46}/>
