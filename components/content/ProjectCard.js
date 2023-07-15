@@ -1,5 +1,7 @@
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useTheme } from "next-themes";
+
+import { useEffect } from 'react';
 
 import styles from "../../styles/content/components/projectcard.module.scss";
 
@@ -14,44 +16,30 @@ function ProjectCard(props) {
     const project = props.project;
     const { name, description, photos, about } = project;
 
-    const [theme, setTheme] = useState("dark");
+    const { theme, setTheme } = useTheme();
 
     useEffect(() => {
-        const htmlElement = document.documentElement;
-        const currentTheme = htmlElement.getAttribute('data-theme');
-        setTheme(currentTheme);
-    
-        const observer = new MutationObserver(mutationsList => {
-            for(let mutation of mutationsList) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-                    setTheme(htmlElement.getAttribute('data-theme'));
-                }
-            }
-        });
-    
-        const config = { attributes: true, attributeFilter: ['data-theme'] };
-      
-        observer.observe(htmlElement, config);
-
-        return () => observer.disconnect();
-    
-    }, []);
+        const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (theme === "system" && typeof window !== "undefined") {
+            setTheme(prefersDarkTheme ? "dark" : "light");
+        }
+    }, [theme, setTheme]);
 
     return <>
         <div className={styles.projectCard}>          
             <div className={styles.title}>{name}</div>
             <div className={styles.presentation}>               
-                    <div className={styles.placeholder}>
-                        <NoSSRWrapper>
-                            <Image
-                                src={theme === 'dark' ? photos.dark : photos.light}
-                                width={2451}
-                                height={1360}
-                                alt="me"
-                                className={styles.image}
-                            />
-                        </NoSSRWrapper>
-                    </div>
+                <div className={styles.placeholder}>
+                    <NoSSRWrapper>
+                        <Image
+                            src={theme === 'dark' ? photos.dark : photos.light}
+                            width={2451}
+                            height={1360}
+                            alt="me"
+                            className={styles.image}
+                        />
+                    </NoSSRWrapper>
+                </div>
                 <div className={styles.details}>
                     <a className={styles.category}>
                         <Technologies width={46} height={46}/>

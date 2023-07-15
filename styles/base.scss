@@ -11,7 +11,7 @@
     --button-color-hover: #b3345c;
 
     --grey-scale: 10%;
-    --placeholder: grey;
+    --placeholder: rgba(128, 128, 128, 0);
 }
 [data-theme="light"] {
     --primary-color: #e5e5e5;
@@ -26,7 +26,7 @@
     --button-color-hover: #b3345c;
 
     --grey-scale: 0;
-    --placeholder: grey;
+    --placeholder: rgba(128, 128, 128, 0);
 }
 body {
     all: unset;
