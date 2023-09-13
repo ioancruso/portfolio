@@ -1,15 +1,16 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import { AboutMe } from "../components/content/AboutMe"
+import {AboutMe} from "../components/content/AboutMe";
 
 function HomePage() {
-
-    return <>
-        <Head>
-            <title>Hi! I'm Ioan.</title>
-        </Head>
-        <AboutMe/>
-    </>
+    return (
+        <>
+            <Head>
+                <title>Hi! I'm Ioan.</title>
+            </Head>
+            <AboutMe />
+        </>
+    );
 }
-  
-export default HomePage
+
+export default HomePage;
