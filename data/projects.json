@@ -1,31 +1,30 @@
 [
     {
-      "id": 1,
-      "name": "Full Stack NextJs Application - Dictionary",
-      "description": "Developed using Next.js and React.js, acting as an interactive dictionary for informal expressions./Employed SCSS for a modern UI design with a Dark Mode feature, enhancing user experience./Utilized Supabase for efficient backend operations including user authentication and database management./Enabled registered users to contribute by adding expressions and interacting via a like-dislike system.",
-      "photos": {
-        "dark": "/demos/dictionary/darkmode3.png",
-        "light": "/demos/dictionary/lightmode3.png"
-      },
-      "about": {
-        "technologies": "React, SASS, Supabase",
-        "demo": "https://dictionary.icruso.ro/",
-        "repository": "https://github.com/ioancruso/dictionary"
-      }
+        "id": 1,
+        "name": "Full Stack NextJs Application - Dictionary",
+        "description": "Developed using Next.js and React.js, acting as an interactive dictionary for informal expressions./Employed SCSS for a modern UI design with a Dark Mode feature, enhancing user experience./Utilized Supabase for efficient backend operations including user authentication and database management./Enabled registered users to contribute by adding expressions and interacting via a like-dislike system.",
+        "photos": {
+            "dark": "/demos/dictionary/darkmode3.png",
+            "light": "/demos/dictionary/lightmode3.png"
+        },
+        "about": {
+            "technologies": "React, SASS, Supabase",
+            "demo": "https://dictionary.icruso.ro/",
+            "repository": "https://github.com/ioancruso/dictionary"
+        }
     },
     {
-      "id": 2,
-      "name": "Full Stack NextJs Application - To-do List",
-      "description": "Developed using Next.js and React.js, acting as a todo list for users./Employed SCSS for a modern UI design./Integrated a user-friendly ’Dark Mode’ toggle for a more comfortable viewing experience./Utilized Supabase for efficient backend operations including user authentication and database management.",
-      "photos": {
-        "dark": "/demos/todo/darkmode.png",
-        "light": "/demos/todo/lightmode.png"
-      },
-      "about": {
-        "technologies": "React, SASS, Supabase",
-        "demo": "https://todo.icruso.ro/",
-        "repository": "https://github.com/ioancruso/todo"
-      }
+        "id": 2,
+        "name": "Full Stack NextJs Application - To-do List",
+        "description": "Developed using Next.js and React.js, acting as a todo list for users./Employed SCSS for a modern UI design./Integrated a user-friendly ’Dark Mode’ toggle for a more comfortable viewing experience./Utilized Supabase for efficient backend operations including user authentication and database management.",
+        "photos": {
+            "dark": "/demos/todo/darkmode.png",
+            "light": "/demos/todo/lightmode.png"
+        },
+        "about": {
+            "technologies": "React, SASS, Supabase",
+            "demo": "https://todo.icruso.ro/",
+            "repository": "https://github.com/ioancruso/todo"
+        }
     }
-  ]
-  
+]

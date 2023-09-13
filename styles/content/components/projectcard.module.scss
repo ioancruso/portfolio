@@ -21,9 +21,10 @@
     margin-inline: 0.5rem;
     padding: 1rem;
     margin-inline: auto;
+    border: 2px solid var(--fourth-color);
     @media screen and (min-width: 1136px) {
         width: 80%;
-    } 
+    }
 }
 .title {
     grid-row: 1/2;
@@ -43,11 +44,11 @@
     gap: 1.5rem;
     padding-block: 1rem;
     justify-content: center;
+    align-items: center;
     border-block-end: 1px solid var(--fourth-color);
     @media screen and (min-width: 1136px) {
         display: grid;
-        grid-template-columns: 60% 20%;
-        column-gap: 5rem;
+        grid-template-columns: 70% min-content;
     }
 }
 .image {
@@ -56,12 +57,12 @@
     width: 96%;
     height: 96%;
     border-radius: 0.5rem;
-    border: 1px solid var(--fourth-color);
+    border: 2px solid var(--fourth-color);
 }
 .placeholder {
     background-color: var(--placeholder);
     grid-row: 1/2;
-    grid-column: 1/2; 
+    grid-column: 1/2;
     aspect-ratio: 1.85;
     display: flex;
     justify-content: center;
@@ -72,21 +73,17 @@
     grid-column: 1/2;
     margin-block: auto;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    gap: 5rem;
+    flex-direction: row;
+    width: min-content;
     margin-inline: 1rem;
     @media screen and (min-width: 625px) {
         grid-row: 1/2;
         grid-column: 2/3;
-        flex-direction: column;
-        gap: 1rem;
-        margin-inline: unset;
-
+        gap: 3rem;
     }
-    div {
-        display: flex;
-        gap: 2rem;
-        flex-direction: row;
+    @media screen and (min-width: 1136px) {
+        flex-direction: column;
     }
 }
 .about {
@@ -95,8 +92,9 @@
     padding-block: 1.5em;
     padding-inline: 1.5rem;
     text-align: left;
+    text-align: justify;
     @media screen and (min-width: 1136px) {
-        margin-inline: 5%;
+        margin-inline: 7%;
     }
 }
 .category {

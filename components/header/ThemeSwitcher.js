@@ -1,9 +1,8 @@
-import { useTheme } from "next-themes";
+import {useTheme} from "next-themes";
 
-import { useEffect } from "react";
+import {useEffect, useState} from "react";
 
-import Switch from "react-switch";
-import NoSSRWrapper from "../NoSSRWrapper"
+import {motion} from "framer-motion";
 
 import Darkmode from "../../svgs/dark";
 import Lightmode from "../../svgs/light";
@@ -11,40 +10,68 @@ import Lightmode from "../../svgs/light";
 import styles from "../../styles/header/components/switcher.module.scss";
 
 function ThemeSwitch() {
-    
-    const { theme, setTheme } = useTheme();
-
-    useEffect(() => {
-        const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        if (theme === "system" && typeof window !== "undefined") {
-            setTheme(prefersDarkTheme ? "dark" : "light");
-        }
-    }, [theme, setTheme]);
+    const {resolvedTheme, setTheme} = useTheme();
+    const [theme, setTheTheme] = useState("none");
+    const [mounted, setMounted] = useState(false);
 
     const toggle = () => {
-        setTheme(theme === "light" ? "dark" : "light");
+        setTheme(resolvedTheme === "light" ? "dark" : "light");
     };
 
-    return <>      
-        <div className={styles.toggleButton}>
-            <label className={styles.lala}> 
-            <NoSSRWrapper>
-                <Switch 
-                    onChange={toggle} 
-                    checked={theme === 'light'} 
-                    offColor="#000" 
-                    onColor="#fff" 
-                    offHandleColor="#fff" 
-                    onHandleColor="#000" 
-                    uncheckedHandleIcon={<Darkmode/>}
-                    checkedHandleIcon={<Lightmode/>}
-                    uncheckedIcon={null} 
-                    checkedIcon={null} 
-                />
-            </NoSSRWrapper>
-            </label>
-        </div>    
-    </>
+    useEffect(() => {
+        if (resolvedTheme) {
+            setTheTheme(resolvedTheme);
+        }
+    }, [resolvedTheme]);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    return (
+        <>
+            <div className={styles.wrapper}>
+                <div
+                    className={styles.switch}
+                    data-ison={theme}
+                    onClick={toggle}
+                >
+                    {mounted && (
+                        <>
+                            {theme == "light" && (
+                                <Darkmode
+                                    className={styles.dark}
+                                    height={25}
+                                    width={25}
+                                    data-ison={theme}
+                                />
+                            )}
+                            <motion.div
+                                className={styles.handle}
+                                layout
+                                transition={spring}
+                                data-ison={theme}
+                            />
+                            {theme == "dark" && (
+                                <Lightmode
+                                    className={styles.light}
+                                    height={25}
+                                    width={25}
+                                    data-ison={theme}
+                                />
+                            )}
+                        </>
+                    )}
+                </div>
+            </div>
+        </>
+    );
 }
 
-export { ThemeSwitch }
+const spring = {
+    type: "spring",
+    stiffness: 600,
+    damping: 50,
+};
+
+export {ThemeSwitch};

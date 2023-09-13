@@ -1,9 +1,8 @@
 .content {
-    display: grid;
+    padding: 1rem;
     place-items: center;
     background-color: var(--primary-color);
-    transition: background-color 0.5s ease;
     @media screen and (min-width: 800px) {
-        grid-template-rows: 1fr;
+        padding: 2rem;
     }
 }

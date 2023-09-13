@@ -20,7 +20,10 @@
     @media screen and (min-width: 1136px) {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 0.75fr;
+        justify-content: center;
+        align-items: center;
         column-gap: 1rem;
+        height: 100%;
     }
 }
 .photo {
@@ -31,6 +34,7 @@
     grid-column: 1/2;
     border-radius: 50%;
     filter: grayscale(var(--grey-scale));
+    border: 2px solid var(--fourth-color);
     @media screen and (min-width: 1136px) {
         width: 85%;
         grid-row: 1/2;
@@ -72,7 +76,7 @@
 .socialsButton {
     all: unset;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     cursor: pointer;
     @media screen and (min-width: 1136px) {
@@ -95,6 +99,9 @@
             stroke: var(--button-color-hover);
         }
         transform: scale(1.05);
+    }
+    svg {
+        margin-inline: auto;
     }
 }
 .socials {

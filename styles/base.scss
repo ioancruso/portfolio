@@ -1,5 +1,13 @@
+* {
+    -webkit-transition: background-color 200ms linear, color 20ms linear;
+    -moz-transition: background-color 200ms linear, color 20ms linear;
+    -o-transition: background-color 200ms linear, color 20ms linear;
+    -ms-transition: background-color 200ms linear, color 20ms linear;
+    transition: background-color 200ms linear, color 20ms linear;
+}
+
 :root {
-    --primary-color: #2B303B;
+    --primary-color: #2b303b;
     --secondary-color: #3b4251ce;
     --third-color: #18181b;
     --fourth-color: #4c4e54;
@@ -16,11 +24,11 @@
 [data-theme="light"] {
     --primary-color: #e5e5e5;
     --secondary-color: #fafafa;
-    --third-color: #D3D3D3;
+    --third-color: #d3d3d3;
     --fourth-color: #b7bac0;
 
     --text-color: #000;
-    --clickable-color: #2D6A9F;
+    --clickable-color: #2d6a9f;
 
     --button-color: #567cdb;
     --button-color-hover: #b3345c;
@@ -34,11 +42,6 @@ body {
     background-color: var(--primary-color);
     color: var(--text-color);
     font-family: system-ui, sans-serif;
-    -webkit-transition: background-color 300ms linear, color 1s linear;
-    -moz-transition: background-color 300ms linear, color 1s linear;
-    -o-transition: background-color 300ms linear, color 1s linear;
-    -ms-transition: background-color 300ms linear, color 1s linear;
-    transition: background-color 300ms linear, color 1s linear;
 }
 #__next {
     display: grid;
