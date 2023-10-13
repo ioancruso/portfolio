@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "HeadlessWordPress Frontend - NextJs Application",
-        "description": "Developed using Next.js and React.js, paired with TypeScript, acting as a frontend for a wordpress blog./Employed SCSS for a modern UI design./Integrated a user-friendly ’Dark Mode’ toggle for a more comfortable viewing experience./Utilized Graphql to get the data from the wordpress blog.",
+        "name": "Headless WordPress Frontend - NextJs Application",
+        "description": "Developed using Next.js and React.js, paired with TypeScript, acting as a frontend for a wordpress blog./Utilized Graphql to get the data from the wordpress blog.",
         "preview": "https://quidest.ro/preview",
         "about": {
             "demo": "https://quidest.ro/"
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Dictionary - NextJs Application ",
-        "description": "Developed using Next.js and React.js, acting as an interactive dictionary for informal expressions./Employed SCSS for a modern UI design with a Dark Mode feature, enhancing user experience./Utilized Supabase for efficient backend operations including user authentication and database management./Enabled registered users to contribute by adding expressions and interacting via a like-dislike system.",
+        "description": "Developed using Next.js and React.js, acting as an interactive dictionary for informal expressions./Utilized Supabase for efficient backend operations including user authentication and database management.",
         "preview": "https://dictionary.icruso.ro/",
         "about": {
             "demo": "https://dictionary.icruso.ro/",
@@ -21,7 +21,7 @@
     {
         "id": 3,
         "name": "To-do List - NextJs Application",
-        "description": "Developed using Next.js and React.js, acting as a todo list for users./Employed SCSS for a modern UI design./Integrated a user-friendly ’Dark Mode’ toggle for a more comfortable viewing experience./Utilized Supabase for efficient backend operations including user authentication and database management.",
+        "description": "Developed using Next.js and React.js, acting as a todo list for users./Utilized Supabase for efficient backend operations including user authentication and database management.",
         "preview": "https://todo.icruso.ro/",
         "about": {
             "demo": "https://todo.icruso.ro/",
