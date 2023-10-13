@@ -19,7 +19,7 @@
     border-radius: 0.5rem;
     background-color: var(--secondary-color);
     margin-inline: 0.5rem;
-    padding: 1rem;
+    padding: 1.2rem;
     margin-inline: auto;
     border: 2px solid var(--fourth-color);
     @media screen and (min-width: 1136px) {
@@ -31,8 +31,7 @@
     font-weight: bold;
     font-size: 1.8rem;
     text-align: center;
-    margin-block-start: 2rem;
-    padding-block-end: 1.5rem;
+    padding-block-end: 1.2rem;
     border-block-end: 1px solid var(--fourth-color);
 }
 .presentation {
@@ -72,8 +71,8 @@
 .about {
     grid-row: 3/4;
     font-size: 1.3rem;
-    padding-block: 1.5em;
-    padding-inline: 1.5rem;
+    padding-block-start: 1.2rem;
+    padding-inline: 1.2rem;
     text-align: left;
     @media screen and (min-width: 1136px) {
         margin-inline: 7%;

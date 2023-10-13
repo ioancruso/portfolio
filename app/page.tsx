@@ -28,7 +28,7 @@ export default function Home() {
                     <div className={styles.socials}>
                         <div className={styles.list}>
                             <a
-                                href="/CV_3.pdf"
+                                href="/CV.pdf"
                                 target="_blank"
                                 className={styles.socialsButton}
                             >

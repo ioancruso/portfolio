@@ -6,18 +6,16 @@ function NavBar() {
     return (
         <>
             <div className={styles.wrapper}>
-                <div className={styles.navbar}>
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link href="/">About</Link>
-                            </li>
-                            <li>
-                                <Link href="/projects">Portfolio</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav className={styles.navbar}>
+                    <ul>
+                        <li>
+                            <Link href="/">About</Link>
+                        </li>
+                        <li>
+                            <Link href="/projects">Portfolio</Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </>
     );

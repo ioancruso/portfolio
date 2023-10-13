@@ -1,6 +1,6 @@
 .header {
     display: grid;
-    grid-template-columns: 1fr min-content;
+    grid-template-columns: 8rem 1fr 8rem;
     background-color: var(--primary-color);
     border-block-end: 1px solid var(--fourth-color);
 }
