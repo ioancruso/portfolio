@@ -57,7 +57,7 @@ function ProjectCard(props: ProjectCardProps) {
                             href={about.demo}
                             target="_blank"
                             className={`${styles.category} ${styles.link}`}
-                            rel="noopener noreferrer"
+                            rel="noopener noreferrer nofollow"
                         >
                             <Demo width={50} height={50} />
                             <div>Demo</div>
@@ -67,7 +67,7 @@ function ProjectCard(props: ProjectCardProps) {
                                 href={about.repository}
                                 target="_blank"
                                 className={`${styles.category} ${styles.link}`}
-                                rel="noopener noreferrer"
+                                rel="noopener noreferrer nofollow"
                             >
                                 <Github width={50} height={50} />
                                 <div>Repository</div>
