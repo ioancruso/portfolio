@@ -1,24 +1,16 @@
 import Image from "next/image";
 
-import {useState} from "react";
+import GitHub from "@/svgs/github";
+import Linkedin from "@/svgs/linkedin";
+import CV from "@/svgs/cv";
+import Email from "@/svgs/email";
 
-import GitHub from "../../svgs/github";
-import Linkedin from "../../svgs/linkedin";
-import CV from "../../svgs/cv";
-import Email from "../../svgs/email";
+import data from "@/data/about.json";
 
-import data from "../../data/about.json";
+import styles from "./page.module.scss";
 
-import styles from "../../styles/content/components/aboutme.module.scss";
-
-function AboutMe() {
-    const [imageLoaded, setImageLoaded] = useState(false);
-
+export default function Home() {
     const {description, email, github, linkedin} = data;
-
-    const handleImageLoad = () => {
-        setImageLoaded(true);
-    };
 
     return (
         <>
@@ -28,10 +20,8 @@ function AboutMe() {
                     width={1280}
                     height={1125}
                     alt="me"
-                    className={`${styles.photo} ${
-                        imageLoaded ? "" : styles.placeholder
-                    }`}
-                    onLoad={handleImageLoad}
+                    className={styles.photo}
+                    priority
                 />
                 <div className={styles.about}>
                     <div className={styles.description}>{description}</div>
@@ -78,5 +68,3 @@ function AboutMe() {
         </>
     );
 }
-
-export {AboutMe};

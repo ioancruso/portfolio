@@ -1,7 +1,7 @@
-import {NavBar} from "@/components/header/NavBar";
-import {ThemeSwitch} from "@/components/header/ThemeSwitcher";
+import {NavBar} from "./navbar/NavBar";
+import {ThemeSwitch} from "./ThemeSwitcher/ThemeSwitcher";
 
-import styles from "../styles/header/header.module.scss";
+import styles from "./header.module.scss";
 
 function Header() {
     return (

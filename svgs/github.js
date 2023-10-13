@@ -1,4 +1,4 @@
-import styles from '../styles/content/components/aboutme.module.scss'
+import styles from "@/app/page.module.scss";
 
 const Github = (props) => (
     <svg
@@ -17,5 +17,5 @@ const Github = (props) => (
             />
         </g>
     </svg>
-)
-export default Github
+);
+export default Github;

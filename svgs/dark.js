@@ -1,4 +1,4 @@
-import styles from "../styles/svgs.module.scss";
+import styles from "./svg.module.scss";
 
 const DarkSvg = (props) => (
     <svg

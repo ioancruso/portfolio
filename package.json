@@ -1,20 +1,27 @@
 {
-  "name": "portofolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@vercel/analytics": "^1.0.2",
-    "framer-motion": "^10.16.4",
-    "next": "^13.4.2",
-    "next-themes": "^0.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sass": "^1.62.1"
-  }
+    "name": "portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@vercel/analytics": "^1.0.2",
+        "framer-motion": "^10.16.4",
+        "next": "13.5.4",
+        "next-themes": "^0.2.1",
+        "react": "^18",
+        "react-dom": "^18",
+        "sass": "^1.62.1",
+        "screenshotmachine": "^2.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "typescript": "^5"
+    }
 }

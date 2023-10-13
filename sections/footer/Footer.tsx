@@ -1,6 +1,6 @@
-import styles from "../styles/footer/footer.module.scss";
+import styles from "./footer.module.scss";
 
-import data from "../data/about.json";
+import data from "@/data/about.json";
 
 function Footer() {
     const {name, footer} = data;

@@ -1,13 +1,14 @@
-import {useTheme} from "next-themes";
+"use client";
 
 import {useEffect, useState} from "react";
 
+import {useTheme} from "next-themes";
 import {motion} from "framer-motion";
 
-import Darkmode from "../../svgs/dark";
-import Lightmode from "../../svgs/light";
+import Darkmode from "@/svgs/dark";
+import Lightmode from "@/svgs/light";
 
-import styles from "../../styles/header/components/switcher.module.scss";
+import styles from "./switcher.module.scss";
 
 function ThemeSwitch() {
     const {resolvedTheme, setTheme} = useTheme();

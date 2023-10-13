@@ -1,0 +1,9 @@
+.projectsSection {
+    display: grid;
+    row-gap: 0.7rem;
+    padding: 0.7rem;
+    @media screen and (min-width: 1136px) {
+        row-gap: 1.4rem;
+        padding: 1.4rem;
+    }
+}

@@ -1,4 +1,4 @@
-import styles from '../styles/content/components/projectcard.module.scss'
+import styles from "@/app/projects/projectcard.module.scss";
 
 const Demo = (props) => (
     <svg
@@ -17,5 +17,5 @@ const Demo = (props) => (
             d="m9.172 14.829 5.657-5.657M7.05 11.293l-1.414 1.414a4 4 0 1 0 5.657 5.657l1.412-1.414m-1.413-9.9 1.414-1.414a4 4 0 1 1 5.657 5.657l-1.414 1.414"
         />
     </svg>
-)
-export default Demo
+);
+export default Demo;

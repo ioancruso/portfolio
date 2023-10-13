@@ -1,4 +1,4 @@
-import styles from '../styles/content/components/aboutme.module.scss'
+import styles from "@/app/page.module.scss";
 
 const Linkedin = (props) => (
     <svg
@@ -16,5 +16,5 @@ const Linkedin = (props) => (
             clipRule="evenodd"
         />
     </svg>
-)
-export default Linkedin
+);
+export default Linkedin;

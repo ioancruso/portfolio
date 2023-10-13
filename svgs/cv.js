@@ -1,5 +1,4 @@
-import styles from '../styles/content/components/aboutme.module.scss'
-
+import styles from "@/app/page.module.scss";
 
 const CV = (props) => (
     <svg
@@ -9,7 +8,7 @@ const CV = (props) => (
         viewBox="0 0 24 24"
         {...props}
     >
-    <title />
+        <title />
         <g
             className={styles.svgColorStroke}
             fill="none"
@@ -20,5 +19,5 @@ const CV = (props) => (
             <path d="M18 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7.1a2 2 0 0 1 1.5.6l4.9 5.2a2 2 0 0 1 .5 1.4V20a2 2 0 0 1-2 2ZM7.9 17.5h8.2M7.9 13.5h8.2M8 9.5h5" />
         </g>
     </svg>
-)
-export default CV
+);
+export default CV;
