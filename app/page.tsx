@@ -31,6 +31,7 @@ export default function Home() {
                                 href="/CV.pdf"
                                 target="_blank"
                                 className={styles.socialsButton}
+                                rel="noopener noreferrer nofollow"
                             >
                                 <CV />
                                 <div className={styles.socialName}>CV</div>
@@ -39,6 +40,7 @@ export default function Home() {
                                 href={linkedin}
                                 target="_blank"
                                 className={styles.socialsButton}
+                                rel="noopener noreferrer"
                             >
                                 <Linkedin width={55} height={55} />
                                 <div className={styles.socialName}>
@@ -49,6 +51,7 @@ export default function Home() {
                                 href={`mailto:${email}`}
                                 target="_blank"
                                 className={styles.socialsButton}
+                                rel="noopener noreferrer nofollow"
                             >
                                 <Email width={58} height={58} />
                                 <div className={styles.socialName}>Email</div>
@@ -57,6 +60,7 @@ export default function Home() {
                                 href={github}
                                 target="_blank"
                                 className={styles.socialsButton}
+                                rel="noopener noreferrer"
                             >
                                 <GitHub width={55} height={55} />
                                 <div className={styles.socialName}>Github</div>
