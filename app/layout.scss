@@ -6,11 +6,12 @@
     transition: background-color 200ms ease-in, color 20ms linear;
 }
 
+/* Dark Theme */
 [data-theme="dark"] {
-    --primary-color: #2b303b;
-    --secondary-color: #3b4251ce;
-    --third-color: #18181b;
-    --fourth-color: #4c4e54;
+    --primary-color: #25252d; /* Color for footer and header */
+    --secondary-color: #2b303b; /* Color for the container between the footer and header */
+    --third-color: #3b4251; /* Color for the content inside the container */
+    --fourth-color: #4c4e54; /* Color for borders */
 
     --text-color: #ffffff;
     --clickable-color: #4692d3;
@@ -21,11 +22,13 @@
     --grey-scale: 10%;
     --placeholder: rgba(128, 128, 128, 0);
 }
+
+/* Light Theme */
 [data-theme="light"] {
-    --primary-color: #e5e5e5;
-    --secondary-color: #fafafa;
-    --third-color: #d3d3d3;
-    --fourth-color: #b7bac0;
+    --primary-color: #e5e5e5; /* Color for footer and header */
+    --secondary-color: #fafafa; /* Color for the container between the footer and header */
+    --third-color: #d3d3d3; /* Color for the content inside the container */
+    --fourth-color: #b7bac0; /* Color for borders */
 
     --text-color: #000;
     --clickable-color: #2d6a9f;

@@ -1,9 +1,12 @@
 import type {Metadata} from "next";
+import {cookies} from "next/headers";
+
+import {Analytics} from "@vercel/analytics/react";
 
 import {Header} from "@/sections/header/Header";
 import {Footer} from "@/sections/footer/Footer";
 
-import ThemeProvider from "@/providers/ThemeProvider";
+import type {theme} from "@/sections/header/Header";
 
 import "./layout.scss";
 
@@ -17,14 +20,20 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
+    const cookieStore = cookies();
+    const cookie = cookieStore.get("theme");
+    let theme: string = "dark";
+
+    if (cookie) {
+        theme = cookie?.value;
+    }
     return (
-        <html lang="en" suppressHydrationWarning={true}>
+        <html lang="en" data-theme={theme}>
             <body>
-                <ThemeProvider>
-                    <Header />
-                    {children}
-                    <Footer />
-                </ThemeProvider>
+                <Header theme={theme as theme} />
+                {children}
+                <Footer />
+                <Analytics />
             </body>
         </html>
     );

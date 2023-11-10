@@ -7,14 +7,6 @@
     align-items: center;
     justify-content: flex-end;
 }
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 .switch {
     width: 4.2rem;
     height: 2.2rem;
@@ -47,17 +39,14 @@
     background-color: #fff;
     border-radius: 40px;
     box-sizing: border-box;
-    animation: fadeIn 2s;
     &[data-ison="light"] {
         background-color: #000;
     }
 }
 
 .dark {
-    animation: fadeIn 2s;
     margin-inline-end: 0.18rem;
 }
 .light {
-    animation: fadeIn 2s;
     margin-inline-start: 0.18rem;
 }

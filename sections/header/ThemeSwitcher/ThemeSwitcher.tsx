@@ -1,67 +1,61 @@
 "use client";
 
-import {useEffect, useState} from "react";
-
 import {useTheme} from "next-themes";
+import {useState, useEffect} from "react";
+
 import {motion} from "framer-motion";
 
-import Darkmode from "@/svgs/dark";
-import Lightmode from "@/svgs/light";
+import DarkSvg from "@/svgs/dark";
+import LightSvg from "@/svgs/light";
 
-import styles from "./switcher.module.scss";
+import styles from "./themeswitcher.module.scss";
 
-function ThemeSwitch() {
-    const {resolvedTheme, setTheme} = useTheme();
-    const [theme, setTheTheme] = useState("none");
-    const [mounted, setMounted] = useState(false);
+import type {HeaderProps} from "../Header";
+
+export function ThemeSwitcher({theme}: HeaderProps) {
+    const [TheTheme, setTheTheme] = useState(theme);
 
     const toggle = () => {
-        setTheme(resolvedTheme === "light" ? "dark" : "light");
+        setTheTheme(TheTheme === "light" ? "dark" : "light");
     };
 
     useEffect(() => {
-        if (resolvedTheme) {
-            setTheTheme(resolvedTheme);
+        document.cookie = `theme=${TheTheme};path=/;`;
+        const htmlElement = document.querySelector("html");
+        if (htmlElement) {
+            htmlElement.setAttribute("data-theme", TheTheme);
         }
-    }, [resolvedTheme]);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
+    }, [TheTheme]);
 
     return (
         <>
             <div className={styles.wrapper}>
                 <div
                     className={styles.switch}
-                    data-ison={theme}
+                    data-ison={TheTheme}
                     onClick={toggle}
                 >
-                    {mounted && (
-                        <>
-                            {theme == "light" && (
-                                <Darkmode
-                                    className={styles.dark}
-                                    height={25}
-                                    width={25}
-                                    data-ison={theme}
-                                />
-                            )}
-                            <motion.div
-                                className={styles.handle}
-                                layout
-                                transition={spring}
-                                data-ison={theme}
-                            />
-                            {theme == "dark" && (
-                                <Lightmode
-                                    className={styles.light}
-                                    height={25}
-                                    width={25}
-                                    data-ison={theme}
-                                />
-                            )}
-                        </>
+                    {TheTheme === "light" && (
+                        <DarkSvg
+                            className={styles.dark}
+                            height={25}
+                            width={25}
+                            data-ison={TheTheme}
+                        />
+                    )}
+                    <motion.div
+                        className={styles.handle}
+                        layout
+                        transition={spring}
+                        data-ison={TheTheme}
+                    />
+                    {TheTheme === "dark" && (
+                        <LightSvg
+                            className={styles.light}
+                            height={25}
+                            width={25}
+                            data-ison={TheTheme}
+                        />
                     )}
                 </div>
             </div>
@@ -74,5 +68,3 @@ const spring = {
     stiffness: 600,
     damping: 50,
 };
-
-export {ThemeSwitch};
