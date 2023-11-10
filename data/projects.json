@@ -11,11 +11,11 @@
     {
         "id": 2,
         "name": "Dictionary - NextJs Application ",
-        "description": "Developed using Next.js and React.js, paired with TypeScript, acting as an interactive dictionary for informal expressions./Utilized Supabase for efficient backend operations including user authentication and database management./The repository is a alpha version of  the aplication. The last version(which can be seen in the demo) is private because it will be used by the client.",
+        "description": "Developed using Next.js and React.js, paired with TypeScript, acting as an interactive dictionary for informal expressions./Utilized Supabase for efficient backend operations including user authentication and database management.",
         "preview": "https://dictionary.icruso.ro/",
         "about": {
             "demo": "https://dictionary.icruso.ro/",
-            "repository": "https://github.com/ioancruso/dictionary"
+            "repository": "https://github.com/ioancruso/app-dictionary"
         }
     },
     {
