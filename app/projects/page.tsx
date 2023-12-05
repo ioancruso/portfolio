@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <>
             <div className={styles.projectsSection}>
-                {[...data].reverse().map((project) => (
+                {[...data].map((project) => (
                     <ProjectCard key={project.id} project={project} />
                 ))}
             </div>
