@@ -1,31 +1,30 @@
 [
-    {
-        "id": 1,
-        "name": "Headless WordPress Frontend - NextJs Application",
-        "description": "Developed using Next.js and React.js, paired with TypeScript, acting as a frontend for a wordpress blog./Utilized Graphql to get the data from the wordpress blog./The repository is private because the project is in use by the client.",
-        "preview": "https://quidest.ro/preview",
-        "about": {
-            "demo": "https://quidest.ro/"
-        }
-    },
-    {
-        "id": 2,
-        "name": "Dictionary - NextJs Application ",
-        "description": "Developed using Next.js and React.js, paired with TypeScript, acting as an interactive dictionary for informal expressions./Utilized Supabase for efficient backend operations including user authentication and database management.",
-        "preview": "https://dictionary.icruso.ro/",
-        "about": {
-            "demo": "https://dictionary.icruso.ro/",
-            "repository": "https://github.com/ioancruso/app-dictionary"
-        }
-    },
-    {
-        "id": 3,
-        "name": "To-do List - NextJs Application",
-        "description": "Developed using Next.js and React.js, acting as a todo list for users./Utilized Supabase for efficient backend operations including user authentication and database management.",
-        "preview": "https://todo.icruso.ro/",
-        "about": {
-            "demo": "https://todo.icruso.ro/",
-            "repository": "https://github.com/ioancruso/todo"
-        }
-    }
+	{
+		"id": 1,
+		"name": "Headless WordPress Frontend - NextJs Application",
+		"description": "Developed using Next.js and React.js, paired with TypeScript, acting as a frontend for a wordpress blog./Utilized Graphql to get the data from the wordpress blog./The repository is private because the project is in use.",
+		"preview": "https://quidest.ro/preview",
+		"about": {
+			"demo": "https://quidest.ro/"
+		}
+	},
+	{
+		"id": 2,
+		"name": "Dictionary - NextJs Application ",
+		"description": "Developed using Next.js and React.js, paired with TypeScript, acting as an interactive dictionary for informal expressions./Utilized Supabase for efficient backend operations including user authentication and database management./The repository is private because the project iwill be in use by a client.",
+		"preview": "https://dictionary.icruso.ro/",
+		"about": {
+			"demo": "https://dictionary.icruso.ro/"
+		}
+	},
+	{
+		"id": 3,
+		"name": "To-do List - NextJs Application",
+		"description": "Developed using Next.js and React.js, acting as a todo list for users./Utilized Supabase for efficient backend operations including user authentication and database management.",
+		"preview": "https://todo.icruso.ro/",
+		"about": {
+			"demo": "https://todo.icruso.ro/",
+			"repository": "https://github.com/ioancruso/todo"
+		}
+	}
 ]
