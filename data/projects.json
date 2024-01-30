@@ -11,7 +11,7 @@
 	{
 		"id": 2,
 		"name": "Dictionary - NextJs Application ",
-		"description": "Developed using Next.js and React.js, paired with TypeScript, acting as an interactive dictionary for informal expressions./Utilized Supabase for efficient backend operations including user authentication and database management./The repository is private because the project iwill be in use by a client.",
+		"description": "Developed using Next.js and React.js, paired with TypeScript, acting as an interactive dictionary for informal expressions./Utilized Supabase for efficient backend operations including user authentication and database management./The repository is private because the project will be in use by a client./Still working on it.",
 		"preview": "https://dictionary.icruso.ro/",
 		"about": {
 			"demo": "https://dictionary.icruso.ro/"
