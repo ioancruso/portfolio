@@ -13,7 +13,7 @@
 		"id": 2,
 		"name": "Urban Dictionary",
 		"type": "NextJs Application",
-		"description": "The app serves as an interactive dictionary for informal expressions.///It leverages Supabase for backend operations, including user authentication and database management.///Features a like system and a report system for expressions.///The app includes a DASHBOARD for dictionary administration, where an admin can view a summary of website content and manage expressions (approve/reject/delete/restore) and user reports, as well as delete or restore user accounts.",
+		"description": "The app serves as an interactive dictionary for informal expressions.///It leverages Supabase for backend operations, including user authentication and database management.///Features a like system and a report system for expressions.///The app includes a DASHBOARD for dictionary administration, where an admin can view a summary of website content and manage it. Expressions and user reports can be approved/rejected/deleted/restored, as well as user accounts.",
 		"about": {
 			"demo": "https://dictionary.icruso.ro/",
 			"screenshot": "dictionary.png"
