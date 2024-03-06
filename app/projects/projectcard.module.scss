@@ -1,137 +1,104 @@
 //Svgs
 
 .svgColorFill {
-    fill: var(--button-color);
-    transition: stroke 0.3s;
+	fill: var(--button-text-color);
+	transition: stroke 0.3s;
 }
 .svgColorStroke {
-    stroke: var(--button-color);
-    transition: stroke 0.3s;
-}
-
-.svgColorFill2 {
-    fill: var(--text-color);
-    transition: stroke 1s;
+	stroke: var(--button-text-color);
+	transition: stroke 0.3s;
 }
 
 .projectCard {
-    display: grid;
-    border-radius: 0.5rem;
-    background-color: var(--third-color);
-    margin-inline: 0.5rem;
-    padding: 1.2rem;
-    margin-inline: auto;
-    border: 2px solid var(--fourth-color);
-    @media screen and (min-width: 1136px) {
-        width: 80%;
-    }
+	display: grid;
+	border-radius: 0.5rem;
+	background-color: var(--third-color);
+	padding: 1.2rem;
+	grid-template-columns: 1fr;
+	border: 2px solid var(--fourth-color);
 }
 .title {
-    grid-row: 1/2;
-    font-weight: bold;
-    font-size: 1.8rem;
-    text-align: center;
-    padding-block-end: 1.2rem;
-    border-block-end: 1px solid var(--fourth-color);
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-align: center;
+	margin-block-end: 0.3rem;
 }
-.presentation {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    grid-row: 2/3;
-    margin-inline: auto;
-    gap: 1.5rem;
-    padding-block: 1rem;
-    justify-content: center;
-    align-items: center;
-    border-block-end: 1px solid var(--fourth-color);
-    @media screen and (min-width: 1136px) {
-        display: grid;
-        grid-template-columns: 70% min-content;
-    }
+.type {
+	text-align: center;
+	font-weight: bold;
+	margin-block-end: 0.7rem;
+}
+.imageContainer {
+	margin-block: 0.5rem;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-block-start: 60.25%;
+	border-radius: 0.5rem;
+}
+.image {
+	all: unset;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	box-sizing: border-box;
+	border: 2px solid var(--fourth-color);
 }
 .details {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    margin-block: auto;
-    display: flex;
-    gap: 5rem;
-    flex-direction: row;
-    width: min-content;
-    margin-inline: 1rem;
-    @media screen and (min-width: 625px) {
-        grid-row: 1/2;
-        grid-column: 2/3;
-        gap: 3rem;
-    }
-    @media screen and (min-width: 1136px) {
-        flex-direction: column;
-    }
+	display: flex;
+	gap: 5rem;
+	flex-direction: row;
+	width: min-content;
+	margin-inline: 1rem;
+	margin-inline: auto;
 }
 .about {
-    grid-row: 3/4;
-    font-size: 1.3rem;
-    padding-block-start: 1.2rem;
-    padding-inline: 1.2rem;
-    text-align: left;
-    @media screen and (min-width: 1136px) {
-        margin-inline: 7%;
-    }
+	font-size: 1.05rem;
+	padding-block-start: 0.7rem;
+	padding-inline: 1.2rem;
+	text-align: left;
+	height: 10%;
 }
-.category {
-    all: unset;
-    display: flex;
-    flex-direction: column;
-    margin-block: auto;
-    margin-inline: auto;
-    font-size: 1.2rem;
-    svg {
-        margin-inline: auto;
-    }
-    div {
-        margin-block-start: 0.3rem;
-        font-weight: bold;
-        text-align: center;
-    }
-}
-.link {
-    cursor: pointer;
-    color: var(--button-color);
-    &:hover {
-        .socialName {
-            color: var(--button-color-hover);
-        }
-        .svgColorFill {
-            fill: var(--button-color-hover);
-        }
-        .svgColorFillInverted {
-            fill: var(--button-color-hover);
-        }
-        .svgColorStroke {
-            stroke: var(--button-color-hover);
-        }
-        .svgColorStrokeInverted {
-            stroke: var(--button-color-hover);
-        }
-        color: var(--button-color-hover);
-        transform: scale(1.05);
-    }
-}
-.iframe {
-    height: 42rem;
-    width: 100%;
-    border: none;
-    overflow: hidden;
-    border: 2px solid var(--fourth-color);
-    pointer-events: none;
-    border-radius: 0.5rem;
-    margin-inline: auto;
-    transition: opacity 0.5s;
-}
-.iframeHidden {
-    opacity: 0;
-}
-
-.iframeVisible {
-    opacity: 1;
+.button {
+	all: unset;
+	display: flex;
+	flex-direction: row;
+	margin-block: auto;
+	margin-inline: auto;
+	font-size: 1rem;
+	cursor: pointer;
+	background-color: var(--button-color);
+	color: var(--button-text-color);
+	border: 1px solid var(--fourth-color);
+	border-radius: 0.5rem;
+	padding-inline-end: 0.25rem;
+	&:hover {
+		transform: scale(1.05);
+		background-color: var(--button-color-hover);
+		color: var(--button-text-color-hover);
+		.svgColorFill {
+			fill: var(--button-text-color-hover);
+		}
+		.svgColorFillInverted {
+			fill: var(--button-text-color-hover);
+		}
+		.svgColorStroke {
+			stroke: var(--button-text-color-hover);
+		}
+		.svgColorStrokeInverted {
+			stroke: var(--button-text-color-hover);
+		}
+	}
+	svg {
+		margin-inline: auto;
+	}
+	div {
+		margin-block: auto;
+		font-weight: bold;
+		text-align: center;
+	}
 }

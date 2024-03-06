@@ -1,30 +1,33 @@
 [
 	{
 		"id": 1,
-		"name": "Headless WordPress Frontend - NextJs Application",
-		"description": "Developed using Next.js and React.js, paired with TypeScript, acting as a frontend for a wordpress blog./Utilized Graphql to get the data from the wordpress blog./The repository is private because the project is in use.",
-		"preview": "https://quidest.ro/preview",
+		"name": "Headless WordPress Frontend",
+		"type": "NextJs Application",
+		"description": "The app acts as the frontend interface for a WordPress blog.///It utilizes GraphQL to fetch data from the WordPress blog.///The blog is optimized for SEO, dynamically generating all tags for every page.///The sitemap is dynamically generated, incorporating the routes of WordPress articles as well as the pages in the frontend app.",
 		"about": {
-			"demo": "https://quidest.ro/"
+			"demo": "https://quidest.ro/",
+			"screenshot": "blog.png"
 		}
 	},
 	{
 		"id": 2,
-		"name": "Dictionary - NextJs Application ",
-		"description": "Developed using Next.js and React.js, paired with TypeScript, acting as an interactive dictionary for informal expressions./Utilized Supabase for efficient backend operations including user authentication and database management./The repository is private because the project will be in use by a client./The project isn't complete, so some functionalities don't work yet. I'm still working on it.",
-		"preview": "https://dictionary.icruso.ro/",
+		"name": "Urban Dictionary",
+		"type": "NextJs Application",
+		"description": "The app serves as an interactive dictionary for informal expressions.///It leverages Supabase for backend operations, including user authentication and database management.///Features a like system and a report system for expressions.///The app includes a DASHBOARD for dictionary administration, where an admin can view a summary of website content and manage expressions(approve/reject/delete/restore) and user reports, as well as delete or restore user accounts.",
 		"about": {
-			"demo": "https://dictionary.icruso.ro/"
+			"demo": "https://dictionary.icruso.ro/",
+			"screenshot": "dictionary.png"
 		}
 	},
 	{
 		"id": 3,
-		"name": "To-do List - NextJs Application",
-		"description": "Developed using Next.js and React.js, acting as a todo list for users./Utilized Supabase for efficient backend operations including user authentication and database management.",
-		"preview": "https://todo.icruso.ro/",
+		"name": "To-do List",
+		"type": "NextJs Application",
+		"description": "The app acts as a todo list for users.///It utilizes Supabase for efficient backend operations including user authentication and database management.///Every todo can have a different color and can be edited, deleted, or marked as solved.",
 		"about": {
 			"demo": "https://todo.icruso.ro/",
-			"repository": "https://github.com/ioancruso/todo"
+			"repository": "https://github.com/ioancruso/todo",
+			"screenshot": "todo.png"
 		}
 	}
 ]

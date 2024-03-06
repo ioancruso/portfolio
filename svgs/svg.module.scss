@@ -1,16 +1,16 @@
 .svgColorFill {
-    fill: var(--text-color);
-    transition: stroke 0.3s;
+	fill: var(--text-color);
+	transition: stroke 0.3s;
 }
 .svgColorStroke {
-    stroke: var(--text-color);
-    transition: stroke 0.3s;
+	stroke: var(--text-color);
+	transition: stroke 0.3s;
 }
 .svgColorFillInverted {
-    fill: var(--primary-color);
-    transition: stroke 0.3s;
+	fill: var(--primary-color);
+	transition: stroke 0.3s;
 }
 .svgColorStrokeInverted {
-    stroke: var(--primary-color);
-    transition: stroke 0.3s;
+	stroke: var(--primary-color);
+	transition: stroke 0.3s;
 }

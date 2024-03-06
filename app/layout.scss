@@ -1,55 +1,59 @@
 * {
-    -webkit-transition: background-color 200ms ease-in, color 20ms linear;
-    -moz-transition: background-color 200ms ease-in, color 20ms linear;
-    -o-transition: background-color 200ms ease-in, color 20ms linear;
-    -ms-transition: background-color 200ms ease-in, color 20ms linear;
-    transition: background-color 200ms ease-in, color 20ms linear;
+	-webkit-transition: background-color 200ms ease-in, color 20ms linear;
+	-moz-transition: background-color 200ms ease-in, color 20ms linear;
+	-o-transition: background-color 200ms ease-in, color 20ms linear;
+	-ms-transition: background-color 200ms ease-in, color 20ms linear;
+	transition: background-color 200ms ease-in, color 20ms linear;
 }
 
 /* Dark Theme */
 [data-theme="dark"] {
-    --primary-color: #25252d; /* Color for footer and header */
-    --secondary-color: #2b303b; /* Color for the container between the footer and header */
-    --third-color: #3b4251; /* Color for the content inside the container */
-    --fourth-color: #4c4e54; /* Color for borders */
+	--primary-color: #25252d; /* Color for footer and header */
+	--secondary-color: #2b303b; /* Color for the container between the footer and header */
+	--third-color: #3b4251; /* Color for the content inside the container */
+	--fourth-color: #4c4e54; /* Color for borders */
 
-    --text-color: #ffffff;
-    --clickable-color: #4692d3;
+	--text-color: #ffffff;
+	--clickable-color: #4692d3;
 
-    --button-color: #567fe8;
-    --button-color-hover: #b3345c;
+	--button-color: #567cdb;
+	--button-color-hover: #b3345c;
+	--button-text-color: #ffffff; /* White */
+	--button-text-color-hover: #f0f0f0; /* Slightly off-white for a subtle hover effect */
 
-    --grey-scale: 10%;
-    --placeholder: rgba(128, 128, 128, 0);
+	--grey-scale: 10%;
+	--placeholder: rgba(128, 128, 128, 0);
 }
 
 /* Light Theme */
 [data-theme="light"] {
-    --primary-color: #e5e5e5; /* Color for footer and header */
-    --secondary-color: #fafafa; /* Color for the container between the footer and header */
-    --third-color: #d3d3d3; /* Color for the content inside the container */
-    --fourth-color: #b7bac0; /* Color for borders */
+	--primary-color: #e5e5e5; /* Color for footer and header */
+	--secondary-color: #fafafa; /* Color for the container between the footer and header */
+	--third-color: #d3d3d3; /* Color for the content inside the container */
+	--fourth-color: #b7bac0; /* Color for borders */
 
-    --text-color: #000;
-    --clickable-color: #2d6a9f;
+	--text-color: #000;
+	--clickable-color: #2d6a9f;
 
-    --button-color: #567cdb;
-    --button-color-hover: #b3345c;
+	--button-color: #567cdb;
+	--button-color-hover: #b3345c;
+	--button-text-color: #ffffff;
+	--button-text-color-hover: #ffffff;
 
-    --grey-scale: 0;
-    --placeholder: rgba(128, 128, 128, 0);
+	--grey-scale: 0;
+	--placeholder: rgba(128, 128, 128, 0);
 }
 html {
-    overflow-y: scroll; /* For other browsers */
+	overflow-y: scroll;
 }
 body {
-    padding: 0;
-    margin: 0;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    font-family: system-ui, sans-serif;
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: min-content 1fr min-content;
-    background-color: var(--secondary-color);
+	padding: 0;
+	margin: 0;
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	font-family: system-ui, sans-serif;
+	display: grid;
+	min-height: 100dvh;
+	grid-template-rows: min-content 1fr min-content;
+	background-color: var(--secondary-color);
 }
