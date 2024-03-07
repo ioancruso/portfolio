@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import GitHub from "@/svgs/github";
 import Linkedin from "@/svgs/linkedin";
@@ -8,6 +9,12 @@ import Email from "@/svgs/email";
 import data from "@/data/about.json";
 
 import styles from "./page.module.scss";
+
+export const metadata: Metadata = {
+	title: "About | Crușoveanu Ioan",
+	description:
+		"The official portfolio of Ioan Crușoveanu, showcasing me and my work.",
+};
 
 export default function Home() {
 	const { description, email, github, linkedin } = data;
