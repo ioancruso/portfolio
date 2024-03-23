@@ -35,7 +35,7 @@ export default function Home() {
 					<div className={styles.socials}>
 						<div className={styles.list}>
 							<a
-								href="/MY_CV.pdf"
+								href="/CV.pdf"
 								target="_blank"
 								className={styles.socialsButton}
 								rel="noopener noreferrer nofollow"
