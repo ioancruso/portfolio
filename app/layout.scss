@@ -1,0 +1,108 @@
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+	scrollbar-width: thin; /* For Firefox */
+}
+
+/* Webkit browsers */
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+* {
+	-webkit-transition: background-color 200ms ease-in, color 20ms linear;
+	-moz-transition: background-color 200ms ease-in, color 20ms linear;
+	-o-transition: background-color 200ms ease-in, color 20ms linear;
+	-ms-transition: background-color 200ms ease-in, color 20ms linear;
+	transition: background-color 200ms ease-in, color 20ms linear;
+
+	box-sizing: border-box;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+	--primary-color: #121212; /* Main background: Very dark grey */
+	--secondary-color: #1e1e1e; /* Elements on main background: Dark grey */
+	--third-color: #2a2a2a; /* Elements on secondary elements: Medium dark grey */
+	--fourth-color: #3e3e3e; /* Borders: Lighter dark grey */
+
+	--text-color: #e0e0e0; /* Light text color */
+	--clickable-color: #1e90ff; /* Dodger blue clickable color */
+	--clickable-hover-color: #ff6347; /* Tomato for hover */
+
+	--button-color: #4682b4; /* Steel blue button color */
+	--button-color-hover: #ff6347; /* Tomato for button hover state */
+	--button-text-color: #ffffff; /* White text color for buttons */
+	--button-text-color-hover: #ffffff; /* White text color for buttons on hover */
+
+	--box-shadow-color: rgba(0, 0, 0, 0.5); /* Dark shadow for dark mode */
+
+	--grey-scale: 10%;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+	--primary-color: #ffffff; /* Main background: White */
+	--secondary-color: #f8f9fa; /* Elements on main background: Light grey */
+	--third-color: #e9ecef; /* Elements on secondary elements: Medium light grey */
+	--fourth-color: #dee2e6; /* Borders: Darker light grey */
+
+	--text-color: #212529; /* Dark text color */
+	--clickable-color: #007bff; /* Bright blue clickable color */
+	--clickable-hover-color: #ff4500; /* Orange red for hover */
+
+	--button-color: #0069d9; /* Bright blue button color */
+	--button-color-hover: #ff4500; /* Orange red for button hover state */
+	--button-text-color: #ffffff; /* White text color for buttons */
+	--button-text-color-hover: #ffffff; /* White text color for buttons on hover */
+
+	--box-shadow-color: rgba(
+		147,
+		147,
+		147,
+		0.6
+	); /* Light grey shadow for light mode */
+
+	--grey-scale: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	font-family: "Calibri", sans-serif;
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: 8vh 1fr min-content;
+	background-color: var(--secondary-color);
+	overflow-y: scroll; /* Always show scrollbar */
+}
+
+a {
+	color: var(--clickable-color);
+	transition: color 20ms linear;
+}
+
+a:hover {
+	color: var(--clickable-hover-color);
+}
+
+button {
+	background-color: var(--button-color);
+	color: var(--button-text-color);
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px var(--box-shadow-color);
+	transition: background-color 200ms ease-in, color 20ms linear;
+}
+
+button:hover {
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
+}
+
+button:focus {
+	outline: none;
+}

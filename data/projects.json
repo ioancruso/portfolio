@@ -1,0 +1,77 @@
+[
+	{
+		"id": 1,
+		"name": "quidest.ro",
+		"type": "NextJs Application",
+		"description": [
+			"The app acts as the frontend interface for a WordPress blog.",
+			"It utilizes GraphQL to fetch data from the WordPress blog.",
+			"The blog is optimized for SEO, dynamically generating all tags for every page.",
+			"The sitemap is dynamically generated, incorporating the routes of WordPress articles as well as the pages in the frontend app."
+		],
+		"tech": [
+			"TypeScript",
+			"JavaScript",
+			"NextJs",
+			"ReactJs",
+			"GraphQL",
+			"SCSS",
+			"CSS",
+			"HTML"
+		],
+		"about": {
+			"demo": "https://quidest.ro/",
+			"screenshot": "blog.png"
+		}
+	},
+	{
+		"id": 2,
+		"name": "dictionarurban.ro",
+		"type": "NextJs Application",
+		"description": [
+			"The app serves as an interactive dictionary for informal expressions.",
+			"It leverages Supabase for backend operations, including user authentication and database management.",
+			"Features a like system and a report system for expressions.",
+			"The app's dashboard provides a professional platform for administrators to effectively manage dictionary content and user activities. It enables the quick approval, rejection, deletion, or restoration of submissions, and facilitates user account management."
+		],
+		"tech": [
+			"TypeScript",
+			"JavaScript",
+			"NextJs",
+			"ReactJs",
+			"Supabase",
+			"SCSS",
+			"CSS",
+			"HTML"
+		],
+		"about": {
+			"demo": "https://dictionarurban.ro/",
+			"screenshot": "dictionary.png"
+		}
+	},
+	{
+		"id": 3,
+		"name": "To-do List",
+		"type": "NextJs Application",
+		"description": [
+			"The app acts as a todo list for users.",
+			"It utilizes Supabase for efficient backend operations including user authentication and database management.",
+			"Every todo can have a different color and can be edited, deleted, or marked as solved."
+		],
+		"tech": [
+			"TypeScript",
+			"JavaScript",
+			"NextJs",
+			"ReactJs",
+			"Supabase",
+			"SCSS",
+			"CSS",
+			"HTML"
+		],
+		"about": {
+			"demo": "https://todo.icruso.ro/",
+			"repository": "https://github.com/ioancruso/todo",
+			"screenshot": "todos.png"
+		}
+	}
+]

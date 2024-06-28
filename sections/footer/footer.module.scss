@@ -1,0 +1,11 @@
+.footer {
+	background-color: var(--primary-color);
+	border-block-start: 1px solid var(--fourth-color);
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: bold;
+	box-shadow: 0 0 0.4375rem var(--box-shadow-color);
+	div {
+		margin-block: 1rem;
+	}
+}

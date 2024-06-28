@@ -1,0 +1,223 @@
+//Svgs
+
+.svgColorFill {
+	fill: var(--button-text-color);
+	transition: stroke 0.3s;
+}
+.svgColorStroke {
+	stroke: var(--button-text-color);
+	transition: stroke 0.3s;
+}
+
+.projectCard {
+	display: grid;
+	grid-template-rows: min-content min-content min-content min-content min-content 1fr;
+	border-radius: 0.5rem;
+	background-color: var(--third-color);
+	padding: 1.2rem;
+	grid-template-columns: 1fr;
+	border: 1px solid var(--fourth-color);
+	box-shadow: 0 0 0.4375rem var(--box-shadow-color);
+}
+.title {
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-align: center;
+	margin-block-end: 0.3rem;
+	color: var(--clickable-color);
+}
+.separator {
+	all: unset;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-inline: auto;
+	margin-block: 10px;
+	font-size: 1rem;
+
+	@media screen and (min-width: 320px) {
+		width: 70%;
+	}
+
+	@media screen and (min-width: 480px) {
+		width: 60%;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 50%;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		flex: 1;
+		border-bottom: 2px solid var(--fourth-color);
+	}
+
+	&:not(:empty)::before {
+		margin-right: 0.75em;
+	}
+
+	&:not(:empty)::after {
+		margin-left: 0.75em;
+	}
+}
+
+.imageContainer {
+	margin-block: 0.5rem;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-block-start: 60.25%;
+	border-radius: 8px;
+	box-shadow: 0 0 0.4375rem var(--box-shadow-color);
+}
+.image {
+	all: unset;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	box-sizing: border-box;
+	border: 1px solid var(--fourth-color);
+}
+.details {
+	display: flex;
+	gap: 5rem;
+	flex-direction: row;
+	width: min-content;
+	margin-inline: 1rem;
+	margin-inline: auto;
+}
+.about {
+	font-size: 16px;
+	padding-block-start: 0.7rem;
+	padding-inline: 0.2rem;
+	text-align: left;
+
+	@media screen and (min-width: 320px) {
+		font-size: 17px;
+	}
+
+	@media screen and (min-width: 480px) {
+		font-size: 18px;
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 19px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		font-size: 20px;
+	}
+}
+.button {
+	all: unset;
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+	font-weight: 650;
+	margin-block: 1rem;
+	margin-inline: auto;
+	padding-inline: 3px;
+	padding-block: 2px;
+	border-radius: 10px;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	background-color: var(--button-color);
+	color: var(--button-text-color);
+	border: 2px solid var(--fourth-color);
+	box-shadow: 0 0 0.2375rem var(--box-shadow-color);
+	transition: all 0.3s ease 0s;
+
+	&:nth-child(1) {
+		svg {
+			path {
+				stroke: var(--button-text-color);
+			}
+		}
+	}
+	&:nth-child(2) {
+		svg {
+			path {
+				fill: var(--button-text-color);
+			}
+			margin-inline-end: 3px;
+		}
+	}
+
+	&:hover {
+		transform: scale(1.05); /* Existing hover effect */
+		background-color: var(--button-color-hover);
+		color: var(--button-text-color-hover);
+
+		.svgColorFill {
+			fill: var(--button-text-color-hover);
+		}
+		.svgColorFillInverted {
+			fill: var(--button-text-color-hover);
+		}
+		.svgColorStroke {
+			stroke: var(--button-text-color-hover);
+		}
+		.svgColorStrokeInverted {
+			stroke: var(--button-text-color-hover);
+		}
+
+		/* New addition to ensure text scales */
+		div,
+		svg {
+			transform: scale(1.05);
+		}
+	}
+
+	svg {
+		margin-inline: 0;
+	}
+
+	div {
+		margin-block: auto;
+		font-weight: bold;
+		text-align: center;
+		margin-inline-end: 5px;
+		transition: transform 0.3s ease; /* New addition */
+	}
+}
+.techList {
+	display: flex;
+	flex-wrap: wrap;
+	letter-spacing: 0.025em;
+	gap: 0.375rem;
+	margin: 0 auto;
+	justify-content: center;
+	width: 75%;
+	margin-block: 15px;
+	font-size: 15px;
+
+	div {
+		color: var(--button-text-color);
+		line-height: 1rem;
+		padding: 0.25rem 0.75rem;
+		background-color: var(--button-color);
+		border-radius: 9999px;
+		width: min-content;
+		text-align: center;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		white-space: nowrap;
+	}
+
+	@media (max-width: 768px) {
+		width: 85%;
+	}
+
+	@media (max-width: 480px) {
+		width: 95%;
+	}
+}

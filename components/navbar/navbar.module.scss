@@ -1,0 +1,168 @@
+/* Wrapper Styles */
+.wrapper {
+	display: flex;
+	justify-content: flex-end;
+	margin-block: auto;
+	box-sizing: border-box;
+	@media screen and (min-width: 600px) {
+		justify-content: center;
+	}
+}
+
+/* Mobile Menu Styles */
+.mobile {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100dvw;
+	height: 100dvh;
+	backdrop-filter: blur(8em);
+	-webkit-backdrop-filter: blur(8em);
+	background-color: transparent;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 600px) {
+		display: none;
+	}
+
+	nav ul {
+		all: unset;
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		li > *,
+		button {
+			all: unset;
+			text-transform: uppercase;
+			cursor: pointer;
+			font-weight: bold;
+			font-size: 1.3rem;
+			color: var(--text-color);
+
+			&:hover {
+				color: var(--button-color-hover);
+			}
+		}
+	}
+
+	/* Separator Style */
+	.separator {
+		width: 25px; /* Reduced width */
+		border: none;
+		border-top: 1px solid var(--text-color);
+		margin: 1rem; /* Reduced margin for less space */
+	}
+
+	/* Close Button Styles */
+	.closeNav {
+		text-align: right;
+		margin-inline-end: 8%;
+		margin-bottom: 6dvh;
+
+		@media screen and (min-width: 600px) {
+			display: none;
+		}
+
+		button {
+			all: unset;
+			background: var(--secondary-color);
+			font-size: 1.5rem;
+			cursor: pointer;
+			margin-block-start: 8dvh;
+			padding-block: 0.4rem;
+			padding-inline: 0.8rem;
+			border-radius: 0.5rem;
+			color: var(--text-color);
+			border: 2px solid var(--fourth-color);
+			box-sizing: border-box;
+			box-shadow: 0 0 0.9375rem var(--box-shadow-color);
+			&:hover {
+				background: var(--button-color-hover);
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+
+/* Mobile Menu Button */
+.menu {
+	margin-left: auto;
+	margin-block: auto;
+	color: var(--text-color);
+	padding: 0.5rem;
+	margin-inline-end: 8px;
+	cursor: pointer;
+
+	@media screen and (min-width: 600px) {
+		display: none;
+	}
+	svg {
+		path {
+			fill: var(--text-color);
+		}
+	}
+	&:hover {
+		svg {
+			path {
+				fill: var(--button-color-hover);
+			}
+		}
+	}
+}
+
+/* Desktop Menu Styles */
+/* Desktop Menu Styles */
+.desktop {
+	display: none;
+	font-size: 1.15rem;
+
+	@media screen and (min-width: 600px) {
+		display: flex;
+		justify-content: center;
+	}
+
+	a,
+	button {
+		all: unset;
+		cursor: pointer;
+		position: relative;
+		padding-bottom: 0.2rem; /* Add padding for border space */
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: var(--button-color-hover);
+		}
+
+		&:focus,
+		&:active {
+			outline: none;
+			border-bottom: 2px solid var(--fourth-color); /* Add your desired border color here */
+		}
+	}
+
+	ul {
+		all: unset;
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0.5rem;
+		padding-inline-end: 10px;
+
+		li {
+			text-transform: uppercase;
+			font-weight: bold;
+
+			&:not(:last-child) {
+				border-inline-end: 0.15rem solid var(--fourth-color);
+				padding-inline-end: 0.8rem;
+				margin-inline-end: 0.8rem;
+			}
+		}
+	}
+}

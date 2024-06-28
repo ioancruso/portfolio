@@ -1,0 +1,247 @@
+.aboutSection {
+	display: grid;
+	padding: 10px;
+	text-align: center;
+	row-gap: 20px;
+	grid-template-rows: min-content 1fr;
+
+	@media screen and (min-width: 1136px) {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 0.75fr;
+		justify-content: center;
+		align-items: center;
+		column-gap: 1rem;
+	}
+}
+
+.photo {
+	width: 50dvh;
+	height: auto;
+	margin-inline: auto;
+	max-width: 90%;
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+	border-radius: 50%;
+	filter: grayscale(var(--grey-scale));
+	border: 1px solid var(--fourth-color);
+	box-shadow: 0 0 0.4375rem var(--box-shadow-color);
+
+	@media screen and (min-width: 1136px) {
+		width: 85%;
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
+	}
+}
+
+.about {
+	display: grid;
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+	row-gap: 20px;
+
+	@media screen and (min-width: 1136px) {
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+		row-gap: 40px;
+	}
+}
+
+.title {
+	font-size: 1.8rem;
+	margin-block-start: 0.5rem;
+
+	@media screen and (min-width: 1136px) {
+		margin-block: auto;
+	}
+}
+
+.description {
+	line-height: 1.6;
+	margin-block: auto;
+	letter-spacing: 0.02em;
+	word-spacing: 0.05em;
+	text-align: justify;
+
+	@media screen and (max-width: 320px) {
+		font-size: 1rem;
+		margin-inline: 0.5rem;
+	}
+
+	@media screen and (min-width: 320px) and (max-width: 479px) {
+		font-size: 1.25rem;
+		margin-inline: 0.8rem;
+	}
+
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		font-size: 1.3rem;
+		margin-inline: 1.6rem;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		font-size: 1.375rem;
+		margin-inline: 1.7rem;
+	}
+
+	@media screen and (min-width: 1024px) {
+		font-size: 1.625rem;
+		margin-inline: 1.95rem;
+	}
+}
+
+.socials {
+	display: grid;
+	width: 100%;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 1rem;
+	margin-inline: auto;
+	margin-block: 10px;
+
+	@media screen and (min-width: 1136px) {
+		grid-template-rows: 1fr;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.socialButton {
+	all: unset;
+	display: flex;
+	font-size: 1.2rem;
+	font-weight: 600;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--button-color);
+	cursor: pointer;
+	margin-inline: 1.2rem;
+
+	&:hover {
+		color: var(--button-color-hover);
+		transform: scale(1.05);
+
+		&:nth-child(1),
+		&:nth-child(3) {
+			svg path {
+				stroke: var(--button-color-hover);
+			}
+		}
+
+		&:nth-child(2),
+		&:nth-child(4) {
+			svg path {
+				fill: var(--button-color-hover);
+			}
+		}
+	}
+
+	@media screen and (min-width: 320px) {
+		font-size: 1.25rem;
+	}
+
+	@media screen and (min-width: 480px) {
+		font-size: 1.3rem;
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 1.375rem;
+	}
+
+	@media screen and (min-width: 1024px) {
+		font-size: 1.625rem;
+	}
+}
+
+.techList {
+	display: flex;
+	flex-wrap: wrap;
+	letter-spacing: 0.025em;
+	gap: 0.375rem;
+	margin: 0 auto;
+	justify-content: center;
+	width: 85%;
+
+	@media screen and (min-width: 320px) {
+		font-size: 0.85rem;
+	}
+
+	@media screen and (min-width: 480px) {
+		font-size: 0.95rem;
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 1.05rem;
+	}
+
+	@media screen and (min-width: 1024px) {
+		font-size: 1.15rem;
+	}
+
+	div {
+		color: var(--button-text-color);
+		line-height: 1rem;
+		padding: 0.25rem 0.75rem;
+		background-color: var(--button-color);
+		border-radius: 9999px;
+		width: min-content;
+		text-align: center;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		white-space: nowrap;
+	}
+
+	@media (max-width: 768px) {
+		width: 95%;
+	}
+
+	@media (max-width: 480px) {
+		width: 100%;
+	}
+}
+.separator {
+	all: unset;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-inline: auto;
+
+	&:first-child {
+		margin-block-start: 8px;
+	}
+
+	@media screen and (min-width: 320px) {
+		font-size: 1.25rem;
+		width: 90%;
+	}
+
+	@media screen and (min-width: 480px) {
+		font-size: 1.3rem;
+		width: 80%;
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 1.375rem;
+		width: 70%;
+	}
+
+	@media screen and (min-width: 1024px) {
+		font-size: 1.625rem;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		flex: 1;
+		border-bottom: 2px solid var(--fourth-color);
+	}
+
+	&:not(:empty)::before {
+		margin-right: 0.75em;
+	}
+
+	&:not(:empty)::after {
+		margin-left: 0.75em;
+	}
+}
