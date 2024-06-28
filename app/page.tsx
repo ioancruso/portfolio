@@ -50,7 +50,7 @@ export default function Home() {
 							rel="noopener noreferrer nofollow"
 							aria-label="View CV"
 						>
-							<CV />
+							<CV width={51} height={51} />
 							CV
 						</a>
 						<a
@@ -60,7 +60,7 @@ export default function Home() {
 							rel="noopener noreferrer"
 							aria-label="LinkedIn Profile"
 						>
-							<Linkedin width={55} height={55} />
+							<Linkedin width={53} height={53} />
 							Linkedin
 						</a>
 						<a
@@ -70,7 +70,7 @@ export default function Home() {
 							rel="noopener noreferrer nofollow"
 							aria-label="Send Email"
 						>
-							<Email width={58} height={58} />
+							<Email width={56} height={56} />
 							Email
 						</a>
 						<a
@@ -80,7 +80,7 @@ export default function Home() {
 							rel="noopener noreferrer"
 							aria-label="GitHub Profile"
 						>
-							<Github width={55} height={55} />
+							<Github width={53} height={53} />
 							Github
 						</a>
 					</div>
