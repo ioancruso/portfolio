@@ -194,7 +194,7 @@
 	gap: 0.375rem;
 	margin: 0 auto;
 	justify-content: center;
-	width: 75%;
+	width: 55%;
 	margin-block: 15px;
 	font-size: 15px;
 
@@ -214,10 +214,10 @@
 	}
 
 	@media (max-width: 768px) {
-		width: 85%;
+		width: 75%;
 	}
 
 	@media (max-width: 480px) {
-		width: 95%;
+		width: 85%;
 	}
 }
