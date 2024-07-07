@@ -1,5 +1,6 @@
 import Image from "next/image";
-import type { Metadata } from "next";
+
+import { ProjectCard } from "@/components/projectcard/ProjectCard";
 
 import { Github } from "@/svgs/github";
 import { Linkedin } from "@/svgs/linkedin";
@@ -7,6 +8,9 @@ import { CV } from "@/svgs/cv";
 import { Email } from "@/svgs/email";
 
 import data from "@/data/about.json";
+import projects from "@/data/projects.json";
+
+import type { Metadata } from "next";
 
 import styles from "./page.module.scss";
 
@@ -20,7 +24,10 @@ export default function Home() {
 	const { description, email, github, linkedin, tech } = data;
 
 	return (
-		<>
+		<div className={styles.wrapper}>
+			<h1 id="about" className={`${styles.separator} ${styles.titles}`}>
+				About Me
+			</h1>
 			<section className={styles.aboutSection}>
 				<Image
 					src="/me2.png"
@@ -31,17 +38,16 @@ export default function Home() {
 					priority
 				/>
 				<article className={styles.about}>
-					<h1 className={styles.separator}>About Me</h1>
 					<p className={styles.description}>{description}</p>
 
-					<h2 className={styles.separator}>Technical Skills</h2>
+					<h3 className={styles.separator}>Technical Skills</h3>
 					<div className={styles.techList}>
 						{tech.map((techItem, index) => (
 							<div key={index}>{techItem}</div>
 						))}
 					</div>
 
-					<h2 className={styles.separator}>My Links</h2>
+					<h3 className={styles.separator}>My Links</h3>
 					<div className={styles.socials}>
 						<a
 							href="/CV.pdf"
@@ -86,6 +92,14 @@ export default function Home() {
 					</div>
 				</article>
 			</section>
-		</>
+			<h2 id="projects" className={`${styles.separator} ${styles.titles}`}>
+				Some of my work
+			</h2>
+			<section className={styles.projectsSection}>
+				{[...projects].map((project) => (
+					<ProjectCard key={project.id} project={project} />
+				))}
+			</section>
+		</div>
 	);
 }

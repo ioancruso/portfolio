@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -13,18 +12,14 @@ import styles from "./navbar.module.scss";
 function Navbar() {
 	const [showNav, setShowNav] = useState<boolean>(false);
 
-	const router = useRouter();
-	const searchParams = useSearchParams();
-	const page = searchParams.get("pagina");
-
 	async function show() {
 		setShowNav(!showNav);
 	}
 
 	useEffect(() => {
-		const handleResize = () => {
+		function handleResize() {
 			setShowNav(false);
-		};
+		}
 
 		window.addEventListener("resize", handleResize);
 
@@ -34,7 +29,9 @@ function Navbar() {
 	}, []);
 
 	useEffect(() => {
-		const preventScroll = (e: Event) => e.preventDefault();
+		function preventScroll(e: Event) {
+			e.preventDefault();
+		}
 
 		if (showNav) {
 			window.addEventListener("touchmove", preventScroll, {
@@ -52,29 +49,29 @@ function Navbar() {
 		};
 	}, [showNav]);
 
-	useEffect(() => {
-		if (page) {
-			router.refresh();
-		}
-	}, [page]);
-
 	return (
 		<div className={styles.wrapper}>
 			<motion.div
 				className={styles.menu}
 				onClick={show}
+				aria-label="Toggle navigation"
 				animate={{ rotate: showNav ? 90 : 0 }}
 				transition={{ delay: showNav ? 0 : 0.2 }}
 			>
-				<MenuSvg />
+				<MenuSvg className={styles.menuSvg} />
+				Menu
 			</motion.div>
 			<nav className={styles.desktop}>
 				<ul>
-					<li>
-						<Link href="/">about me</Link>
+					<li className={styles.desktopItem}>
+						<Link href="#about" className={styles.desktopLink}>
+							about
+						</Link>
 					</li>
-					<li>
-						<Link href="/projects">my work</Link>
+					<li className={styles.desktopItem}>
+						<Link href="#projects" className={styles.desktopLink}>
+							my work
+						</Link>
 					</li>
 				</ul>
 			</nav>
@@ -86,20 +83,23 @@ function Navbar() {
 					duration: 0.3,
 					ease: "easeInOut",
 				}}
+				aria-hidden={!showNav}
 			>
 				<div className={styles.closeNav}>
-					<button onClick={show}>X</button>
+					<button onClick={show} aria-label="Close navigation">
+						X
+					</button>
 				</div>
-				<nav>
+				<nav className={styles.mobileNav}>
 					<ul>
 						<li>
-							<Link onClick={show} href="/">
+							<Link href="#about" className={styles.mobileItem}>
 								about me
 							</Link>
 						</li>
 						<hr className={styles.separator} />
 						<li>
-							<Link onClick={show} href="/projects">
+							<Link href="#projects" className={styles.mobileItem}>
 								my work
 							</Link>
 						</li>
@@ -109,4 +109,5 @@ function Navbar() {
 		</div>
 	);
 }
+
 export { Navbar };
