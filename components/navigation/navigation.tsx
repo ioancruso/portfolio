@@ -102,7 +102,7 @@ function Navbar() {
 				transition={{ type: "spring", stiffness: 300 }}
 			>
 				<MenuSvg />
-				Meniu
+				Menu
 			</motion.div>
 			<nav className={styles.desktop}>
 				<ul>
