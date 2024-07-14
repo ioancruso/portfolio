@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/navbar/navbar";
+import { Navbar } from "@/components/navigation/navigation";
 import { ThemeSwitcher } from "@/components/themeswitcher/themeswitcher";
 
 import styles from "./header.module.scss";

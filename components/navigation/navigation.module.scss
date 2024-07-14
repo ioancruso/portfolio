@@ -1,0 +1,215 @@
+.wrapper {
+	display: flex;
+	justify-content: flex-end;
+	margin-block: auto;
+	grid-row: 1 / 2;
+	grid-column: 3 / 4;
+	box-sizing: border-box;
+
+	@media screen and (min-width: 1000px) {
+		grid-row: 1 / 2;
+		grid-column: 3 / 4;
+		justify-content: center;
+	}
+}
+
+.navBackdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100dvw;
+	height: 100dvh;
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.navContent {
+	background: var(--primary-color);
+	padding: 16px;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px var(--box-shadow-color);
+	border: 1px solid var(--fourth-color);
+	position: relative;
+	color: var(--text-color);
+	width: 80%;
+	max-width: 600px;
+	height: min-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 1001;
+
+	nav {
+		padding: 25px;
+		border-radius: 12px;
+		width: 100%;
+	}
+
+	ul {
+		all: unset;
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0;
+
+		li {
+			margin-block: 13px;
+
+			&:has(.option) {
+				margin-block: 8px;
+			}
+		}
+
+		.link,
+		.option {
+			all: unset;
+			text-transform: uppercase;
+			cursor: pointer;
+			font-weight: bold;
+			font-size: 20px;
+			color: var(--text-color);
+
+			&:hover {
+				color: var(--clickable-hover-color);
+			}
+		}
+
+		.option {
+			font-size: 15px;
+		}
+	}
+
+	.separator {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		font-size: 14px;
+		width: 70%;
+		margin-block: 20px;
+
+		&::before,
+		&::after {
+			content: "";
+			flex: 1;
+			border-bottom: 1px solid var(--fourth-color);
+		}
+
+		&:not(:empty)::before {
+			margin-right: 12px;
+		}
+
+		&:not(:empty)::after {
+			margin-left: 12px;
+		}
+	}
+}
+
+.closeButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: none;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+	color: var(--text-color);
+	box-shadow: none;
+
+	&:hover {
+		color: var(--clickable-hover-color);
+		background-color: transparent;
+	}
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	margin-left: auto;
+	margin-block: auto;
+	color: var(--text-color);
+	padding: 8px;
+
+	@media screen and (min-width: 1000px) {
+		display: none;
+	}
+}
+
+.desktop {
+	display: none;
+
+	@media screen and (min-width: 1000px) {
+		display: flex;
+		justify-content: center;
+	}
+
+	& a,
+	button {
+		all: unset;
+		cursor: pointer;
+		text-decoration: none;
+		color: inherit;
+		position: relative; /* Ensure the link is positioned correctly */
+		padding-block: 7px;
+	}
+
+	& ul {
+		all: unset;
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 8px;
+
+		& li {
+			cursor: pointer;
+			font-weight: bold;
+			color: var(--text-color);
+			position: relative;
+			text-transform: uppercase;
+
+			&:hover {
+				color: var(--clickable-hover-color);
+			}
+
+			& a {
+				position: relative; /* Make the link itself relative */
+
+				&::after {
+					content: "";
+					position: absolute;
+					left: 50%;
+					right: 50%;
+					bottom: -1px; /* Adjust this value to place the underline */
+					height: 4px;
+					background-color: var(--clickable-hover-color);
+					border-radius: 2px;
+					transform: scaleX(0);
+					transform-origin: center;
+					transition: transform 0.3s ease-out, left 0.3s ease-out,
+						right 0.3s ease-out;
+				}
+
+				&:hover::after,
+				&.activeLink::after {
+					left: 0;
+					right: 0;
+					transform: scaleX(1);
+				}
+			}
+		}
+
+		& .desktopSeparator {
+			width: 1px;
+			height: 24px;
+			background-color: var(--fourth-color);
+			margin: 0 10px;
+		}
+	}
+}

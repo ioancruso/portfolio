@@ -74,7 +74,7 @@ body {
 	font-family: "Calibri", sans-serif;
 	display: grid;
 	min-height: 100vh;
-	grid-template-rows: 8vh 1fr min-content;
+	grid-template-rows: min-content 1fr min-content;
 	background-color: var(--secondary-color);
 	overflow-y: scroll; /* Always show scrollbar */
 }

@@ -5,6 +5,7 @@
 	background-color: var(--primary-color);
 	border-block-end: 1px solid var(--fourth-color);
 	box-shadow: 0 0 0.4375rem var(--box-shadow-color);
+	min-height: 8dvh;
 	@media screen and (max-width: 599px) {
 		grid-template-columns: 1fr min-content;
 	}
