@@ -4,7 +4,10 @@
 	border-end-start-radius: 0.5rem;
 	box-sizing: border-box;
 	padding: 0.5rem;
-	margin-inline-start: 10px;
+	margin-inline-start: 2px;
+	@media screen and (min-width: 1000px) {
+		margin-inline-start: 10px;
+	}
 }
 .switch {
 	width: 4.2rem;

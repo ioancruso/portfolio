@@ -16,7 +16,7 @@ import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
 	title: "About | Crușoveanu Ioan",
-	description:
+    description:
 		"The official portfolio of Ioan Crușoveanu, showcasing me and my work.",
 };
 

@@ -1,6 +1,6 @@
 {
 	"name": "Crușoveanu Ioan",
-	"description": "I'm a junior developer from Cluj-Napoca, Romania. I would describe myself as a perfectionist who developed a passion for computers and technology from an early age. My goal is to grow and constantly learn new things, specifically to be at least 1% better each day than the day before.",
+	"description": "I'm a passionate developer from Cluj-Napoca, Romania, with a deep-rooted love for technology. I would describe myself as a perfectionist, always striving to grow and learn new things, aiming to be at least 1% better every day than the day before.",
 	"email": "ionut.cruso@gmail.com",
 	"github": "https://github.com/ioancruso",
 	"linkedin": "https://www.linkedin.com/in/ioan-crusoveanu/",
@@ -14,13 +14,13 @@
 		"HTML",
 		"Bootstrap",
 		"Tailwind CSS",
-		"PostgreSQL",
-		"MySQL",
-		"NoSQL",
+		"SQL",
 		"Git",
 		"REST API",
 		"GraphQL",
-		"Supabase"
+		"Supabase",
+		"Docker",
+		"Node.js"
 	],
-	"footer": "2024"
+	"footer": "2023"
 }
