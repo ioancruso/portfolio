@@ -1,6 +1,7 @@
 import React from "react";
 import { cookies } from "next/headers";
 
+import { Analytics } from "@vercel/analytics/next";
 import { AppSidebar } from "@/components/app-sidebar";
 import {
 	SidebarProvider,
@@ -60,6 +61,7 @@ export default function RootLayout({
 						</main>
 					</SidebarInset>
 				</SidebarProvider>
+				<Analytics />
 			</body>
 		</html>
 	);
