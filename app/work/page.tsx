@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image"; // Import the Image component
 import {
 	Carousel,
 	CarouselContent,
@@ -161,11 +162,13 @@ export default function WorkPage() {
 							<CarouselContent>
 								{project.images?.map((image, index) => (
 									<CarouselItem key={index}>
-										<div className="p-4">
-											<img
+										<div className="p-4 relative w-full h-0 pb-[56.25%]">
+											<Image
 												src={image}
 												alt={`Project ${project.title} Slide ${index + 1}`}
-												className="rounded-lg shadow-md w-full h-auto object-cover"
+												className="rounded-lg shadow-md object-cover"
+												fill
+												priority={index === 0} // Optional: Preload the first image
 											/>
 										</div>
 									</CarouselItem>
