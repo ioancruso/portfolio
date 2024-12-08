@@ -92,7 +92,6 @@ BreadcrumbSeparator.displayName = "BreadcrumbSeparator";
 export function BreadcrumbTrail() {
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
-	const projectKey = searchParams.get("p");
 
 	if (pathname === "/") {
 		return (
@@ -114,7 +113,9 @@ export function BreadcrumbTrail() {
 			href: `/${arr.slice(0, index + 1).join("/")}`,
 		}));
 
+	// Specific handling for `/work` with `p` parameter
 	if (pathname === "/work") {
+		const projectKey = searchParams.get("p");
 		pathParts[pathParts.length - 1].name = "Work";
 
 		if (projectKey) {
@@ -126,6 +127,24 @@ export function BreadcrumbTrail() {
 				pathParts.push({
 					name: project.title,
 					href: `${pathname}?p=${projectKey}`,
+				});
+			}
+		}
+	}
+
+	// Specific handling for `/about` with `s` parameter
+	if (pathname === "/about") {
+		const sectionKey = searchParams.get("s");
+
+		if (sectionKey) {
+			const section = data.sidebar.items.find(
+				(item) => item.url === `/about?s=${sectionKey}`,
+			);
+
+			if (section) {
+				pathParts.push({
+					name: section.title,
+					href: section.url,
 				});
 			}
 		}

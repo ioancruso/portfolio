@@ -30,24 +30,7 @@ const navMain = [
 	{
 		title: "About Me",
 		url: "/about",
-		items: [
-			{
-				title: "Education",
-				url: "/about?s=education",
-			},
-			{
-				title: "Experience",
-				url: "/about?s=experience",
-			},
-			{
-				title: "Skills",
-				url: "/about?s=skills",
-			},
-			{
-				title: "Hobbies",
-				url: "/about?s=hobbies",
-			},
-		],
+		items: data.sidebar.items,
 	},
 	{
 		title: "Public Work",

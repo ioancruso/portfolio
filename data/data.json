@@ -236,6 +236,24 @@
 		]
 	},
 	"sidebar": {
+		"items": [
+			{
+				"title": "Education",
+				"url": "/about?s=education"
+			},
+			{
+				"title": "Experience",
+				"url": "/about?s=experience"
+			},
+			{
+				"title": "Skills",
+				"url": "/about?s=skills"
+			},
+			{
+				"title": "Hobbies",
+				"url": "/about?s=hobbies"
+			}
+		],
 		"connect": [
 			{
 				"title": "My CV",
