@@ -25,9 +25,9 @@ export default function HomePage() {
 			animate="visible"
 			variants={animationVariants}
 			transition={{ duration: 0.5 }}
-			className="flex flex-col items-center bg-primary text-text px-4"
+			className="flex flex-col items-center bg-primary text-text py-6 px-4"
 		>
-			<h1 className="text-3xl font-extrabold mb-4 text-highlight text-center tracking-wide mt-[10vh] sm:mt-[20vh]">
+			<h1 className="text-3xl font-extrabold mb-4 text-highlight text-center tracking-wide mt-[0vh] sm:mt-[20vh]">
 				{title}
 			</h1>
 			<p className="text-sm text-muted text-center max-w-prose mb-3">
