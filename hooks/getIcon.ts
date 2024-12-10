@@ -13,6 +13,8 @@ import {
 	FiUser,
 	FiExternalLink,
 	FiGithub,
+	FiEdit3,
+	FiVolume2,
 } from "react-icons/fi";
 
 import {
@@ -75,6 +77,8 @@ export const ICON_MAP: Record<string, React.ComponentType> = {
 	FiUser,
 	FiExternalLink,
 	FiGithub,
+	FiEdit3, // Added for Creativity
+	FiVolume2, // Added for Active Listening
 	FaFutbol,
 	FaTableTennis,
 	FaBook,

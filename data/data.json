@@ -44,40 +44,20 @@
 			],
 			"technical": [
 				{
-					"name": "React",
-					"icon": "SiReact"
+					"name": "C++",
+					"icon": "SiCplusplus"
 				},
 				{
-					"name": "TypeScript",
-					"icon": "SiTypescript"
+					"name": "C",
+					"icon": "SiC"
 				},
 				{
-					"name": "JavaScript",
-					"icon": "SiJavascript"
+					"name": "GraphQL",
+					"icon": "SiGraphql"
 				},
 				{
-					"name": "Next.js",
-					"icon": "SiNextdotjs"
-				},
-				{
-					"name": "CSS",
-					"icon": "SiCss3"
-				},
-				{
-					"name": "SASS",
-					"icon": "SiSass"
-				},
-				{
-					"name": "HTML",
-					"icon": "SiHtml5"
-				},
-				{
-					"name": "Bootstrap",
-					"icon": "SiBootstrap"
-				},
-				{
-					"name": "Tailwind CSS",
-					"icon": "SiTailwindcss"
+					"name": "NoSQL",
+					"icon": "SiMongodb"
 				},
 				{
 					"name": "PostgreSQL",
@@ -88,32 +68,48 @@
 					"icon": "SiMysql"
 				},
 				{
-					"name": "NoSQL",
-					"icon": "SiMongodb"
+					"name": "Supabase",
+					"icon": "SupabaseIcon"
 				},
 				{
-					"name": "Git",
-					"icon": "SiGit"
+					"name": "TypeScript",
+					"icon": "SiTypescript"
+				},
+				{
+					"name": "Next.js",
+					"icon": "SiNextdotjs"
+				},
+				{
+					"name": "React",
+					"icon": "SiReact"
 				},
 				{
 					"name": "REST API",
 					"icon": "SiPostman"
 				},
 				{
-					"name": "GraphQL",
-					"icon": "SiGraphql"
+					"name": "JavaScript",
+					"icon": "SiJavascript"
 				},
 				{
-					"name": "C",
-					"icon": "SiC"
+					"name": "CSS",
+					"icon": "SiCss3"
 				},
 				{
-					"name": "C++",
-					"icon": "SiCplusplus"
+					"name": "SASS",
+					"icon": "SiSass"
 				},
 				{
-					"name": "Supabase",
-					"icon": "SupabaseIcon"
+					"name": "Tailwind CSS",
+					"icon": "SiTailwindcss"
+				},
+				{
+					"name": "Bootstrap",
+					"icon": "SiBootstrap"
+				},
+				{
+					"name": "HTML",
+					"icon": "SiHtml5"
 				}
 			],
 			"social": [
@@ -126,13 +122,13 @@
 				{ "name": "Empathy", "icon": "FiHeart" },
 				{ "name": "Teamwork", "icon": "FiUsers" },
 				{ "name": "Adaptability", "icon": "FiRefreshCw" },
-				{ "name": "Creativity", "icon": "FiPenTool" },
+				{ "name": "Creativity", "icon": "FiEdit3" },
 				{ "name": "Conflict Resolution", "icon": "FiUser" },
-				{ "name": "Leadership", "icon": "FiStar" },
+				{ "name": "Leadership", "icon": "FiUsers" },
 				{ "name": "Time Management", "icon": "FiClock" },
 				{
 					"name": "Active Listening",
-					"icon": "FaAssistiveListeningSystems"
+					"icon": "FiVolume2"
 				},
 				{ "name": "Attention to Details", "icon": "FiSearch" }
 			]
@@ -175,7 +171,6 @@
 				"date": "Oct 2019 – Jul 2022"
 			}
 		],
-
 		"hobbies": [
 			{ "name": "Football", "icon": "FaFutbol" },
 			{ "name": "Tennis", "icon": "FaTableTennis" },
