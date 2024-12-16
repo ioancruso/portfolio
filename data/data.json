@@ -44,6 +44,27 @@
 			],
 			"technical": [
 				{
+					"name": "Next.js",
+					"icon": "SiNextdotjs"
+				},
+				{
+					"name": "React",
+					"icon": "SiReact"
+				},
+				{
+					"name": "CSS",
+					"icon": "SiCss3"
+				},
+				{
+					"name": "SASS",
+					"icon": "SiSass"
+				},
+				{
+					"name": "JavaScript",
+					"icon": "SiJavascript"
+				},
+
+				{
 					"name": "C++",
 					"icon": "SiCplusplus"
 				},
@@ -75,30 +96,12 @@
 					"name": "TypeScript",
 					"icon": "SiTypescript"
 				},
-				{
-					"name": "Next.js",
-					"icon": "SiNextdotjs"
-				},
-				{
-					"name": "React",
-					"icon": "SiReact"
-				},
+
 				{
 					"name": "REST API",
 					"icon": "SiPostman"
 				},
-				{
-					"name": "JavaScript",
-					"icon": "SiJavascript"
-				},
-				{
-					"name": "CSS",
-					"icon": "SiCss3"
-				},
-				{
-					"name": "SASS",
-					"icon": "SiSass"
-				},
+
 				{
 					"name": "Tailwind CSS",
 					"icon": "SiTailwindcss"
@@ -158,7 +161,7 @@
 			{
 				"degree": "Master's in Applied Informatics",
 				"institution": "Technical University of Cluj-Napoca",
-				"date": "Oct 2024 – Present"
+				"date": "Sep 2024 – Present"
 			},
 			{
 				"degree": "Web Development Course",
@@ -184,12 +187,13 @@
 			{
 				"title": "dictionarurban.ro",
 				"description": [
-					"Developed a dictionary platform with responsive UI using Next.js and SCSS.",
-					"Implemented Supabase for authentication and data management, with a dashboard for managing the content and users.",
-					"Focused on delivering a seamless user experience."
+					"Developed a responsive dictionary platform with Supabase for authentication and real-time data handling.",
+					"Designed an admin dashboard for seamless content and user management.",
+					"Implemented SEO best practices, including optimized metadata, Open Graph tags, and schema.org structured data.",
+					"Achieved a perfect score in Core Web Vitals, ensuring fast load times and exceptional user experience."
 				],
 				"link": "https://dictionarurban.ro",
-				"github": "sddsds",
+				"github": null,
 				"key": "dictionary",
 				"images": [
 					"/projects/dictionar/main.png",
@@ -198,9 +202,18 @@
 					"/projects/dictionar/login.png"
 				],
 				"technologies": {
-					"stack": ["Next.js", "HTML", "SASS", "Supabase"],
+					"stack": [
+						"Next.js",
+						"React",
+						"JavaScript",
+						"HTML",
+						"SASS",
+						"Supabase"
+					],
 					"icons": [
 						"SiNextdotjs",
+						"SiReact",
+						"SiJavascript",
 						"SiHtml5",
 						"SiSass",
 						"SupabaseIcon"
@@ -210,9 +223,10 @@
 			{
 				"title": "quidest.ro",
 				"description": [
-					"Developed quidest as a headless WordPress site with a Next.js frontend.",
-					"Optimized performance, improving load times and SEO rankings.",
-					"Integrated advanced SEO features to improve visibility and traffic."
+					"Built a high-performance blog platform using Next.js with a headless WordPress backend.",
+					"Integrated GraphQL for efficient content querying and custom SASS styling for a modern UI.",
+					"Optimized SEO with tailored metadata, Open Graph tags, and internal linking structures.",
+					"Achieved a perfect score in Core Web Vitals, delivering top-tier performance and improved search rankings."
 				],
 				"link": "https://quidest.ro",
 				"github": null,
@@ -224,8 +238,24 @@
 					"/projects/blog/category.png"
 				],
 				"technologies": {
-					"stack": ["Next.js", "WordPress", "HTML", "SASS"],
-					"icons": ["SiNextdotjs", "SiWordpress", "SiHtml5", "SiSass"]
+					"stack": [
+						"Next.js",
+						"React",
+						"JavaScript",
+						"WordPress",
+						"HTML",
+						"SASS",
+						"GraphQL"
+					],
+					"icons": [
+						"SiNextdotjs",
+						"SiReact",
+						"SiJavascript",
+						"SiWordpress",
+						"SiHtml5",
+						"SiSass",
+						"SiGraphql"
+					]
 				}
 			}
 		]

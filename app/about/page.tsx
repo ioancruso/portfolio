@@ -28,28 +28,37 @@ export default function AboutPage() {
 				return (
 					<motion.section
 						id="education"
-						className="space-y-8 mt-[0vh] sm:mt-[15vh]"
+						className="space-y-8 mt-[0vh] sm:mt-[15vh] flex flex-col items-center"
 						initial="hidden"
 						animate="visible"
 						variants={animationVariants}
 						transition={{ duration: 0.5 }}
 					>
-						<div>
-							<h2 className="text-3xl font-bold text-highlight mb-4 text-center">
+						<div className="text-center">
+							<h2 className="text-3xl font-bold text-highlight mb-4">
 								Education
 							</h2>
 							<Separator className="w-full max-w-xs mx-auto mb-8 opacity-50" />
 						</div>
-						<div className="space-y-6">
+						<div className="space-y-6 w-full flex flex-col items-center">
 							{education.map((edu, index) => (
 								<div
 									key={index}
-									className="p-6 rounded-lg bg-third text-text shadow border-l-4 border-accent"
+									className="p-6
+                   rounded-lg
+                   bg-secondary
+                   text-text
+                   shadow
+                   border-l-4
+                   border-accent
+                   w-full
+                   sm:w-3/4
+                   lg:w-1/2"
 								>
-									<h3 className="text-xl font-semibold text-highlight">
+									<h3 className="text-xl font-semibold text-highlight mb-1">
 										{edu.degree}
 									</h3>
-									<p className="text-muted">
+									<p className="text-muted mb-2 italic">
 										{edu.institution}
 									</p>
 									<p className="text-muted">{edu.date}</p>
@@ -74,11 +83,11 @@ export default function AboutPage() {
 							</h2>
 							<Separator className="w-full max-w-xs mx-auto mb-8 opacity-50" />
 						</div>
-						<div className="space-y-6">
+						<div className="space-y-6 w-full flex flex-col items-center">
 							{experiences.map((exp, index) => (
 								<div
 									key={index}
-									className="p-6 rounded-lg bg-secondary text-secondary-foreground shadow border-l-4 border-accent"
+									className="p-6 rounded-lg bg-secondary text-secondary-foreground shadow border-l-4 border-accent  w-full sm:w-3/4 lg:w-2/3"
 								>
 									<p className="text-sm text-muted">
 										{exp.date}
