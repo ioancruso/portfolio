@@ -55,7 +55,7 @@ export default function WorkPage() {
 			if (project) {
 				return (
 					<motion.section
-						className="mt-[0vh] sm:mt-[6vh]"
+						className="mt-[0vh] sm:mt-[2vh]"
 						initial="hidden"
 						animate="visible"
 						variants={animationVariants}
