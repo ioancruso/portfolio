@@ -30,8 +30,8 @@
 		--accent-color: #118862; /* Emerald-500 */
 		--accent-hover-color: #059669; /* Emerald-600 */
 
-		--destructive-color: #ef4444; /* Red */
-		--destructive-hover-color: #dc2626; /* Darker red */
+		--destructive-color: #3b82f6; /* Blue-500 (Cohesive with accent) */
+		--destructive-hover-color: #2563eb; /* Blue-600 */
 
 		--chart-1: #34d399; /* Emerald-400 */
 		--chart-2: #22d3ee; /* Cyan-300 */
@@ -67,8 +67,8 @@
 		--accent-color: #0ea5e9; /* Emerald-500 */
 		--accent-hover-color: #0284c7; /* Emerald-600 */
 
-		--destructive-color: #af1c1c; /* Red-400 */
-		--destructive-hover-color: #df1b1b; /* Darker red */
+		--destructive-color: #6366f1; /* Indigo-500 (Rich, cool tone) */
+		--destructive-hover-color: #4f46e5; /* Indigo-600 */
 
 		--chart-1: #34d399; /* Emerald-400 */
 		--chart-2: #22d3ee; /* Cyan-300 */

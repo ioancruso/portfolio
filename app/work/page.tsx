@@ -62,7 +62,7 @@ export default function WorkPage() {
 						transition={{ duration: 0.5 }}
 					>
 						<div className="mb-4">
-							<h2 className="text-3xl font-bold text-center text-text-highlight">
+							<h2 className="text-3xl font-bold text-center">
 								{project.title}
 							</h2>
 							<Separator className="w-full max-w-xs mx-auto opacity-50" />
@@ -131,7 +131,7 @@ export default function WorkPage() {
 							</ul>
 						</div>
 						<div className="max-w-prose mx-auto mb-6 text-center mt-8">
-							<h3 className="text-xl font-bold mb-4 text-text-highlight">
+							<h3 className="text-xl font-bold mb-4">
 								Technologies Used
 							</h3>
 							<div className="flex flex-wrap gap-4 justify-center">
@@ -203,7 +203,7 @@ export default function WorkPage() {
 				transition={{ duration: 0.5 }}
 				className="flex flex-col items-center mt-[8vh] sm:mt-[15vh] space-y-4"
 			>
-				<h1 className="text-4xl font-extrabold text-center text-text-highlight">
+				<h1 className="text-4xl font-extrabold text-center">
 					My Public Work
 				</h1>
 				<p className="text-sm text-text-muted text-center max-w-prose">

@@ -1,14 +1,13 @@
 {
 	"home": {
 		"title": "Hello and Welcome",
-		"subtitle": "Exploring the world of code, one idea at a time",
 		"description": "I’m Crușoveanu Ioan, a web developer passionate for programming and its limitless possibilities. Whether I’m solving problems or creating intuitive user interfaces, I’m driven by curiosity and a desire to grow. Take a look around to get to know me and my work better.",
 		"buttons": [
 			{ "label": "About Me", "link": "/about", "variant": "destructive" },
 			{ "label": "My Public Work", "link": "/work", "variant": "default" }
 		],
 		"secondaryButtons": [
-			{ "label": "My CV", "link": "/CV.pdf", "variant": "outline" },
+			{ "label": "Download CV", "link": "/CV.pdf", "variant": "outline" },
 			{
 				"label": "LinkedIn",
 				"link": "https://www.linkedin.com/in/ioan-crusoveanu/",
@@ -277,13 +276,14 @@
 			{
 				"title": "Hobbies",
 				"url": "/about?s=hobbies"
+			},
+			{
+				"title": "Download CV",
+				"url": "/CV.pdf"
 			}
 		],
 		"connect": [
-			{
-				"title": "My CV",
-				"url": "/CV.pdf"
-			},
+
 			{
 				"title": "Email",
 				"url": "mailto:ionut.cruso@gmail.com"

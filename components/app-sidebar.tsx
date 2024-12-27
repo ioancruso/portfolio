@@ -16,7 +16,7 @@ import {
 	SidebarMenuSubButton,
 	SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
-import { ThemeSwitcher } from "@/components/themeswitcher/themeswitcher";
+import { ModeToggle } from "@/components/themeswitcher/themeswitcher";
 
 import data from "@/data/data.json";
 
@@ -200,8 +200,10 @@ export function AppSidebar({
 						))}
 					</SidebarMenu>
 				</SidebarGroup>
-				<ThemeSwitcher theme={theme} />
 			</SidebarContent>
+			<div className="ml-5 mb-5">
+				<ModeToggle />
+			</div>
 		</Sidebar>
 	);
 }

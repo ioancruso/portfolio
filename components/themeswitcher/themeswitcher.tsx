@@ -1,69 +1,40 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import * as React from "react";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 
-import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
-import { DarkSvg } from "@/svgs/dark";
-import { LightSvg } from "@/svgs/light";
-
-import styles from "./themeswitcher.module.scss";
-
-import type { theme } from "@/types.ts";
-
-export function ThemeSwitcher({ theme }: { theme: theme }) {
-	const [TheTheme, setTheTheme] = useState(theme);
-
-	const toggle = () => {
-		setTheTheme(TheTheme === "light" ? "dark" : "light");
-	};
-
-	useEffect(() => {
-		document.cookie = `theme=${TheTheme};path=/;`;
-		const htmlElement = document.querySelector("html");
-		if (htmlElement) {
-			htmlElement.setAttribute("data-theme", TheTheme);
-		}
-	}, [TheTheme]);
+export function ModeToggle() {
+	const { setTheme } = useTheme();
 
 	return (
-		<>
-			<div className={styles.wrapper}>
-				<div
-					className={styles.switch}
-					data-ison={TheTheme}
-					onClick={toggle}
-				>
-					{TheTheme === "light" && (
-						<DarkSvg
-							className={styles.dark}
-							height={22}
-							width={22}
-							data-ison={TheTheme}
-						/>
-					)}
-					<motion.div
-						className={styles.handle}
-						layout
-						transition={spring}
-						data-ison={TheTheme}
-					/>
-					{TheTheme === "dark" && (
-						<LightSvg
-							className={styles.light}
-							height={22}
-							width={22}
-							data-ison={TheTheme}
-						/>
-					)}
-				</div>
-			</div>
-		</>
+		<DropdownMenu>
+			<DropdownMenuTrigger asChild>
+				<Button variant="outline" size="icon">
+					<Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+					<Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+					<span className="sr-only">Toggle theme</span>
+				</Button>
+			</DropdownMenuTrigger>
+			<DropdownMenuContent align="end">
+				<DropdownMenuItem onClick={() => setTheme("light")}>
+					Light
+				</DropdownMenuItem>
+				<DropdownMenuItem onClick={() => setTheme("dark")}>
+					Dark
+				</DropdownMenuItem>
+				<DropdownMenuItem onClick={() => setTheme("system")}>
+					System
+				</DropdownMenuItem>
+			</DropdownMenuContent>
+		</DropdownMenu>
 	);
 }
-
-const spring = {
-	type: "spring",
-	stiffness: 600,
-	damping: 50,
-};

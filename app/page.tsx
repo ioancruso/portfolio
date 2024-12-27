@@ -11,8 +11,7 @@ import { Separator } from "@/components/ui/separator";
 import data from "@/data/data.json";
 
 export default function HomePage() {
-	const { title, subtitle, description, buttons, secondaryButtons } =
-		data.home;
+	const { title, description, buttons, secondaryButtons } = data.home;
 
 	const animationVariants = {
 		hidden: { opacity: 0, y: 50 },
@@ -30,11 +29,8 @@ export default function HomePage() {
 			<h1 className="text-3xl font-extrabold mb-4 text-highlight text-center tracking-wide mt-[0vh] sm:mt-[20vh]">
 				{title}
 			</h1>
-			<p className="text-sm text-muted text-center max-w-prose mb-3">
-				{subtitle}
-			</p>
-			<Separator className="w-full max-w-xs mx-auto mb-8 opacity-50" />
-			<p className="text-base font-light text-muted text-center max-w-prose leading-relaxed mx-auto mb-8">
+
+			<p className="text-base font-light text-muted text-center max-w-prose leading-relaxed mx-auto mb-8 mt-3">
 				{description}
 			</p>
 
