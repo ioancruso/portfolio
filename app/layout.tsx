@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				<Suspense>
 					<ThemeProvider
 						defaultTheme={themeFromCookie}
-						attribute="class"
+						disableTransitionOnChange={true}
 					>
 						<SidebarProvider>
 							<AppSidebar theme={themeFromCookie} />

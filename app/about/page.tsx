@@ -135,14 +135,14 @@ export default function AboutPage() {
 										return (
 											<div
 												key={index}
-												className="flex items-center space-x-2 p-2 bg-accent text-white rounded-md shadow hover:bg-accent-hover transition h-min w-min whitespace-nowrap"
+												className="flex items-center space-x-2 p-2 bg-accent text-white rounded-md shadow hover:bg-accent-hover transition h-min w-min whitespace-nowrap "
 											>
 												{Icon && (
 													<Icon
 														aria-label={skill.name}
 													/>
 												)}
-												<span className="font-semibold text-sm flex-grow">
+												<span className="font-semibold text-sm flex-grow ">
 													{skill.name}
 												</span>
 											</div>
@@ -161,7 +161,7 @@ export default function AboutPage() {
 										return (
 											<div
 												key={index}
-												className="flex items-center space-x-2 p-2 bg-accent text-white rounded-md shadow hover:bg-accent-hover transition h-min w-min whitespace-nowrap"
+												className="flex items-center  space-x-2 p-2 bg-accent text-white rounded-md shadow hover:bg-accent-hover transition h-min w-min whitespace-nowrap"
 											>
 												{Icon && (
 													<Icon
