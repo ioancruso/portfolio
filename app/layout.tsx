@@ -1,8 +1,5 @@
 import { ReactNode, Suspense } from "react";
-
-import { cookies } from "next/headers";
 import { ThemeProvider } from "next-themes";
-
 import { Analytics } from "@vercel/analytics/next";
 import { AppSidebar } from "@/components/app-sidebar";
 import {
@@ -14,6 +11,8 @@ import { Separator } from "@/components/ui/separator";
 import { BreadcrumbTrail } from "@/components/ui/breadcrumb";
 
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
+import type { theme } from "@/types";
 
 import "./globals.css";
 
@@ -29,15 +28,19 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
 	// Get the theme from cookies or fall back to "system"
 	const cookieStore = cookies();
-	const themeFromCookie = cookieStore.get("theme")?.value || "system";
+	const themeFromCookie =
+		(cookieStore.get("theme")?.value as theme) || ("dark" as theme);
 
 	return (
 		<html suppressHydrationWarning lang="en">
 			<body className="flex h-screen">
 				<Suspense>
-					<ThemeProvider defaultTheme={themeFromCookie}>
+					<ThemeProvider
+						defaultTheme={themeFromCookie}
+						attribute="class"
+					>
 						<SidebarProvider>
-							<AppSidebar theme="dark" />
+							<AppSidebar theme={themeFromCookie} />
 							<Suspense
 								fallback={<div>Loading Breadcrumbs...</div>}
 							>
