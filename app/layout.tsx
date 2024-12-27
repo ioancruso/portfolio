@@ -1,4 +1,6 @@
 import { ReactNode, Suspense } from "react";
+
+import { cookies } from "next/headers";
 import { ThemeProvider } from "next-themes";
 
 import { Analytics } from "@vercel/analytics/next";
@@ -25,11 +27,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+	// Get the theme from cookies or fall back to "system"
+	const cookieStore = cookies();
+	const themeFromCookie = cookieStore.get("theme")?.value || "system";
+
 	return (
 		<html suppressHydrationWarning lang="en">
 			<body className="flex h-screen">
 				<Suspense>
-					<ThemeProvider defaultTheme="system">
+					<ThemeProvider defaultTheme={themeFromCookie}>
 						<SidebarProvider>
 							<AppSidebar theme="dark" />
 							<Suspense
