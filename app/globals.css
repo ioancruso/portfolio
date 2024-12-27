@@ -4,7 +4,7 @@
 
 @layer base {
 	/* Global Variables */
-	:root {
+	[data-theme="light"] {
 		--primary-color: #ffffff; /* neutral-50 */
 		--secondary-color: #f5f5f5; /* neutral-100 */
 		--third-color: #e5e5e5; /* neutral-200 */
