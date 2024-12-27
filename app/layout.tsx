@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, Suspense } from "react";
 import { ThemeProvider } from "next-themes";
 
 import { Analytics } from "@vercel/analytics/next";
@@ -28,29 +28,34 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html suppressHydrationWarning lang="en">
 			<body className="flex h-screen">
-				<ThemeProvider defaultTheme="system">
-					<SidebarProvider>
-						<AppSidebar theme="dark" />
+				<Suspense>
+					<ThemeProvider defaultTheme="system">
+						<SidebarProvider>
+							<AppSidebar theme="dark" />
+							<Suspense
+								fallback={<div>Loading Breadcrumbs...</div>}
+							>
+								<SidebarInset>
+									<header className="flex h-16 shrink-0 items-center gap-2 border-b">
+										<div className="flex items-center gap-2 px-3">
+											<SidebarTrigger />
+											<Separator
+												orientation="vertical"
+												className="mr-2 h-4 w-[1px] bg-gray-300"
+											/>
+											<BreadcrumbTrail />
+										</div>
+									</header>
 
-						<SidebarInset>
-							<header className="flex h-16 shrink-0 items-center gap-2 border-b">
-								<div className="flex items-center gap-2 px-3">
-									<SidebarTrigger />
-									<Separator
-										orientation="vertical"
-										className="mr-2 h-4 w-[1px] bg-gray-300"
-									/>
-									<BreadcrumbTrail />
-								</div>
-							</header>
-
-							<main className="flex flex-1 flex-col gap-4 p-4">
-								{children}
-							</main>
-						</SidebarInset>
-					</SidebarProvider>
-				</ThemeProvider>
-				<Analytics />
+									<main className="flex flex-1 flex-col gap-4 p-4">
+										{children}
+									</main>
+								</SidebarInset>
+							</Suspense>
+						</SidebarProvider>
+					</ThemeProvider>
+					<Analytics />
+				</Suspense>
 			</body>
 		</html>
 	);
