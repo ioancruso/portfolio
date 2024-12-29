@@ -28,7 +28,7 @@ export default function AboutPage() {
 				return (
 					<motion.section
 						id="education"
-						className="space-y-8 mt-[0vh] sm:mt-[15vh] flex flex-col items-center"
+						className="space-y-8 mt-[0vh] sm:mt-[7vh] flex flex-col items-center"
 						initial="hidden"
 						animate="visible"
 						variants={animationVariants}
@@ -71,7 +71,7 @@ export default function AboutPage() {
 				return (
 					<motion.section
 						id="experience"
-						className="space-y-8 mt-[0vh] sm:mt-[15vh]"
+						className="space-y-8 mt-[0vh] sm:mt-[7vh]"
 						initial="hidden"
 						animate="visible"
 						variants={animationVariants}
@@ -112,7 +112,7 @@ export default function AboutPage() {
 				return (
 					<motion.section
 						id="skills"
-						className="space-y-8 mt-[0vh] sm:mt-[15vh]"
+						className="space-y-8 mt-[0vh] sm:mt-[7vh]"
 						initial="hidden"
 						animate="visible"
 						variants={animationVariants}
@@ -183,7 +183,7 @@ export default function AboutPage() {
 				return (
 					<motion.section
 						id="hobbies"
-						className="space-y-8 mt-[0vh] sm:mt-[15vh]"
+						className="space-y-8 mt-[0vh] sm:mt-[7vh]"
 						initial="hidden"
 						animate="visible"
 						variants={animationVariants}
@@ -221,7 +221,7 @@ export default function AboutPage() {
 						animate="visible"
 						variants={animationVariants}
 						transition={{ duration: 0.5 }}
-						className="flex flex-col items-center mt-[8vh] sm:mt-[15vh] space-y-4"
+						className="flex flex-col items-center mt-[3vh] sm:mt-[7vh] space-y-4"
 					>
 						<h1 className="text-4xl font-extrabold text-center text-highlight">
 							About Me

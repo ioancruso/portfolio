@@ -201,7 +201,7 @@ export default function WorkPage() {
 				animate="visible"
 				variants={animationVariants}
 				transition={{ duration: 0.5 }}
-				className="flex flex-col items-center mt-[8vh] sm:mt-[15vh] space-y-4"
+				className="flex flex-col items-center mt-[8vh] sm:mt-[10vh] space-y-4"
 			>
 				<h1 className="text-4xl font-extrabold text-center">
 					My Public Work
